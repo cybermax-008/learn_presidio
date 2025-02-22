@@ -1,0 +1,4 @@
+google-generativeai
+presidio-analyzer
+presidio_anonymizer
+python-dotenv
