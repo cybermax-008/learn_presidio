@@ -31,7 +31,7 @@ This project provides a set of tools and techniques for sanitizing sensitive dat
 
 ## Usage
 
-1.  **Basic Sanitization:**
+ **Basic Sanitization:**
 
     ```python
     from sanitization import sanitize_text
@@ -41,13 +41,9 @@ This project provides a set of tools and techniques for sanitizing sensitive dat
     print(sanitized_text)
     # Expected output (example): My name is <PERSON> and my phone number is <PHONE_NUMBER>.
     ```
+## Reference
 
-2.  **Customizing Sanitization Rules:**
+- Documentation of [Microsoft Presidio](https://microsoft.github.io/presidio/)
 
-    [Explain how to customize the sanitization rules, e.g., by modifying the `sanitization.py` file or creating custom recognizers.]
-
-3.  **Anonymization and De-anonymization Examples:**
-
-    [Provide code examples demonstrating how to anonymize and de-anonymize data using the provided functions.]
 
 
