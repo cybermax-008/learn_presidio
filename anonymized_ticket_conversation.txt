@@ -11,7 +11,7 @@ Priority: low
 PARTICIPANTS
 ===========
 Support Engineers (Public Comments):
-- <PERSON> (4 public comments)
+- <PERSON_19> (4 public comments)
 - Alma Meng (1 public comments)
 
 Aiven Internal Staff (Private Comments):
@@ -21,9 +21,9 @@ Customer Contacts:
 - Edward O'Connor (6 comments)
 - Unknown (1 comments)
 
-Last Active Support Engineer: <PERSON>
-Last Active Internal Staff: <PERSON>
-Last Active Customer: <PERSON>
+Last Active Support Engineer: <PERSON_1>
+Last Active Internal Staff: <PERSON_1>
+Last Active Customer: <PERSON_2>
 
 INITIAL DESCRIPTION
 =================
@@ -32,11 +32,11 @@ Hello!
 We have a developer currently trying to create a postgres source connector in **wex-shared-aws-dev-kafka-connect-euc1-0** when attempting to use the Avro Converter for Value the user is seeing a 403 error when entering the schema registry URL located at the corresponding kafka service **wex-shared-aws-dev-kafka-euc1. **
 
 The following error is shown -
-**There was an error in the configuration. <URL>gistry.url: Connection failed with HTTP status code 403**
+**There was an error in the configuration. <URL_1>gistry.url: Connection failed with HTTP status code 403**
 
-Schema Registry URL - <URL>:19095
+Schema Registry URL - <URL_7>:19095
 
-Service User being used - ev-dev-entity-events-producer
+Service User being used - <USERNAME_0>
 
 Thank you so much for your help in advance!
 
@@ -46,7 +46,7 @@ COMMENT HISTORY
 ==================================================
 Comment ID: 31602490735761
 Timestamp: 2025-01-08 14:40:23 UTC
-Author: <PERSON> (Customer)
+Author: <PERSON_2> (Customer)
 Type: PUBLIC
 Content:
 Hello!
@@ -54,11 +54,11 @@ Hello!
 We have a developer currently trying to create a postgres source connector in **wex-shared-aws-dev-kafka-connect-euc1-0** when attempting to use the Avro Converter for Value the user is seeing a 403 error when entering the schema registry URL located at the corresponding kafka service **wex-shared-aws-dev-kafka-euc1. **
 
 The following error is shown -
-**There was an error in the configuration. <URL>gistry.url: Connection failed with HTTP status code 403**
+**There was an error in the configuration. <URL_1>gistry.url: Connection failed with HTTP status code 403**
 
-Schema Registry URL - <URL>:19095
+Schema Registry URL - <URL_7>:19095
 
-Service User being used - ev-dev-entity-events-producer
+Service User being used - <USERNAME_0>
 
 Thank you so much for your help in advance!
 
@@ -99,68 +99,68 @@ kafka_connect
 
 AVN-PROD service describe .wex-shared-aws-dev-kafka-connect-euc1-0
 
-<URL>
+<URL_9>
 
 
 ==================================================
 Comment ID: 31604021203217
 Timestamp: 2025-01-08 15:16:34 UTC
-Author: <PERSON> (Aiven Internal)
+Author: <PERSON_19> (Aiven Internal)
 Type: PRIVATE
 Content:
-The integration b/t the KC and <PERSON> service is `kafka_logs`
+The integration b/t the KC and <PERSON_4> service is `kafka_logs`
 
-    Service integrationsSERVICE_INTEGRATION_ID INTEGRATION_TYPE SOURCE DEST ACTIVE ENABLED==================================== ================= ================================================= ===================================================== ====== =======a17992a2-d127-4f43-9cde-cae5a9c52533 kafka_logs wex-shared-aws-dev-kafka-connect-euc1-0 (2996837) wex-shared-aws-dev-kafka-euc1 (2996809) true true
+    Service integrationsSERVICE_INTEGRATION_ID INTEGRATION_TYPE SOURCE DEST ACTIVE ENABLED==================================== ================= ================================================= ===================================================== ====== =======a17992a2-d127-4f43-9cde-cae5a9c52533 kafka_logs wex-shared-aws-dev-kafka-connect-euc1-0 <SERVICE_NUMBER_3> wex-shared-aws-dev-kafka-euc1 <SERVICE_NUMBER_2> true true
 
-The two services are in the same PCIDSS vpc `dac4a65f-195f-6f70-eb5a-81ec482174d5`
+The two services are in the same PCIDSS <VPC_ID_0>
 
 
 ==================================================
 Comment ID: 31604230552209
 Timestamp: 2025-01-08 15:21:53 UTC
-Author: <PERSON> (Aiven Internal)
+Author: <PERSON_19> (Aiven Internal)
 Type: PRIVATE
 Content:
-Actually there are two integration between the KC and <PERSON> services.
+Actually there are two integration between the KC and <PERSON_4> services.
 
-    Service integrationsSERVICE_INTEGRATION_ID INTEGRATION_TYPE SOURCE DEST ACTIVE ENABLED==================================== ================= ================================================= ===================================================== ====== =======97f5b96e-8c36-4639-bfb7-dad1388d2738 kafka_connect wex-shared-aws-dev-kafka-euc1 (2996809) wex-shared-aws-dev-kafka-connect-euc1-0 (2996837) true truea17992a2-d127-4f43-9cde-cae5a9c52533 kafka_logs wex-shared-aws-dev-kafka-connect-euc1-0 (2996837) wex-shared-aws-dev-kafka-euc1 (2996809) true true
+    Service integrationsSERVICE_INTEGRATION_ID INTEGRATION_TYPE SOURCE DEST ACTIVE ENABLED==================================== ================= ================================================= ===================================================== ====== =======97f5b96e-8c36-4639-bfb7-dad1388d2738 kafka_connect wex-shared-aws-dev-kafka-euc1 <SERVICE_NUMBER_2> wex-shared-aws-dev-kafka-connect-euc1-0 <SERVICE_NUMBER_3> true truea17992a2-d127-4f43-9cde-cae5a9c52533 kafka_logs wex-shared-aws-dev-kafka-connect-euc1-0 <SERVICE_NUMBER_3> wex-shared-aws-dev-kafka-euc1 <SERVICE_NUMBER_2> true true
 
 
 ==================================================
 Comment ID: 31604511283217
 Timestamp: 2025-01-08 15:28:25 UTC
-Author: <PERSON> (Aiven Internal)
+Author: <PERSON_19> (Aiven Internal)
 Type: PRIVATE
 Content:
-    USERNAME ENCRYPTED_PASSWORD REPORTED_BY_PRUNE SUPERUSER CREATE_TIME UPDATE_TIME ================================== ================== ================= ========= ================================ ================================aiven 101 chars true false 2024-09-24T14:46:33.778209+00:00 2024-09-24T14:46:33.778209+00:00avnadmin 101 chars true false 2024-09-24T14:46:33.778209+00:00 2024-09-24T14:46:33.778209+00:00ev-dev-entity-events-producer 101 chars true false 2025-01-07T12:18:11.529401+00:00 2025-01-07T12:18:11.529401+00:00
+    <USERNAME_9>_PASSWORD REPORTED_BY_PRUNE SUPERUSER CREATE_TIME UPDATE_TIME ================================== ================== ================= ========= ================================ ================================aiven 101 chars true false 2024-09-24T14:46:33.778209+00:00 2024-09-24T14:46:33.778209+00:00<USERNAME_6> 101 chars true false 2024-09-24T14:46:33.778209+00:00 2024-09-24T14:46:33.778209+00:<USERNAME_8> 101 chars true false 2025-01-07T12:18:11.529401+00:00 2025-01-07T12:18:11.529401+00:00
 
 
 ==================================================
 Comment ID: 31605066423953
 Timestamp: 2025-01-08 15:43:39 UTC
-Author: <PERSON> (Support Engineer)
+Author: <PERSON_19> (Support Engineer)
 Type: PUBLIC
 Content:
 Hi team,
 
 Thanks for reaching out to Aiven.
 
-The KC service and the <PERSON> service are in the same PCIDSS VPC, so they should be able to communicate to each other. The schema registry url and service user also look correct. Has the developer configured `username:password` correctly? Would he share the screenshot of the error including the relevant configurations?
+The KC service and the <PERSON_4> service are in the same PCIDSS VPC, so they should be able to communicate to each other. The schema registry url and service user also look correct. Has the developer configured `username:password` correctly? Would he share the screenshot of the error including the relevant configurations?
 
 Thanks,
-<PERSON>
-<PERSON>
+<PERSON_0>
+<PERSON_3>
 
 
 ==================================================
 Comment ID: 31606114803217
 Timestamp: 2025-01-08 16:10:13 UTC
-Author: <PERSON> (Customer)
+Author: <PERSON_2> (Customer)
 Type: PUBLIC
 Content:
 Ah thanks for pointing this out!
 
-I think it may be because of the <URL>efix in the connector being different from the service-users ACL for the schema registry. We have infomred the user will keep you updated if this works or not.
+I think it may be because of the topic.prefix in the connector being different from the service-users ACL for the schema registry. We have infomred the user will keep you updated if this works or not.
 
 Thanks so much!
 
@@ -168,7 +168,7 @@ Thanks so much!
 ==================================================
 Comment ID: 31606167672977
 Timestamp: 2025-01-08 16:11:54 UTC
-Author: <PERSON> (Support Engineer)
+Author: <PERSON_19> (Support Engineer)
 Type: PUBLIC
 Content:
 Hi Edward,
@@ -176,21 +176,21 @@ Hi Edward,
 Thanks for the update. Please let us know if further assistance is needed.
 
 Regards,
-<PERSON>
-<PERSON>
+<PERSON_0>
+<PERSON_3>
 
 
 ==================================================
 Comment ID: 31610340095633
 Timestamp: 2025-01-08 18:46:08 UTC
-Author: <PERSON> (Customer)
+Author: <PERSON_2> (Customer)
 Type: PUBLIC
 Content:
-Hey <PERSON>!
+Hey <PERSON_0>!
 
-We updated the <URL>efix to match the schema registry ACL resource prefix, and are still getting the 403 error when trying to update the connector.
+We updated the topic.prefix to match the schema registry ACL resource prefix, and are still getting the 403 error when trying to update the connector.
 
-The username and password do appear to be correct. The user being used is **ev-dev-entity-events-producer**
+The <USERNAME_7> password do appear to be correct. The user being used is **<USERNAME_0>**
 
 Thanks so much in advance!
 
@@ -198,28 +198,28 @@ Thanks so much in advance!
 ==================================================
 Comment ID: 31612365593105
 Timestamp: 2025-01-08 20:26:55 UTC
-Author: <PERSON> (Support Engineer)
+Author: <PERSON_19> (Support Engineer)
 Type: PUBLIC
 Content:
 Hi Edward,
 
-I reproduced the error on my test cluster and found if I add this Aiven ACL in <PERSON> service, then the connector can be created successfully.
- ![](<URL>)
+I reproduced the error on my test cluster and found if I add this Aiven ACL in <PERSON_4> service, then the connector can be created successfully.
+ ![](<URL_8>)
 
 Would the customer try that?
 
 Thanks,
-<PERSON>
-<PERSON>
+<PERSON_0>
+<PERSON_3>
 
 
 ==================================================
 Comment ID: 31612623302929
 Timestamp: 2025-01-08 20:39:52 UTC
-Author: <PERSON> (Customer)
+Author: <PERSON_2> (Customer)
 Type: PUBLIC
 Content:
-Hey <PERSON>!
+Hey <PERSON_0>!
 
 Thanks for the suggestion, we can try that.
 
@@ -231,31 +231,31 @@ Thanks so much in advance!
 ==================================================
 Comment ID: 31612786674193
 Timestamp: 2025-01-08 20:52:08 UTC
-Author: <PERSON> (Support Engineer)
+Author: <PERSON_19> (Support Engineer)
 Type: PUBLIC
 Content:
 Hi Edward,
 
 I will reach out to broader team on why that ACL is required once you can confirm it works.
 
-Can you share the KC and <PERSON> services in project `wex-eventing-dev` that have the same settings but do not require that ACL?
+Can you share the KC and <PERSON_4> services in project `wex-eventing-dev` that have the same settings but do not require that ACL?
 
 Thanks,
-<PERSON>
-<PERSON>
+<PERSON_0>
+<PERSON_3>
 
 
 ==================================================
 Comment ID: 31613537682577
 Timestamp: 2025-01-08 21:34:28 UTC
-Author: <PERSON> (Customer)
+Author: <PERSON_2> (Customer)
 Type: PUBLIC
 Content:
-Hey <PERSON>!
+Hey <PERSON_0>!
 
 An example is the following in **wex-eventing-dev -**
 
-In the service **wex-aws-pci-dev-us-west-2-kafka-connect-0** there is a connector named **pg-debezium-source-pgditmcode-uw2** which is using the service user **otr_mcode_event_publisher_service** for the schema registry from the corresponding kafka service **wex-kafka-dev-pci-uw2**
+In the service **wex-aws-pci-dev-us-<JIRA_TICKET_2>-kafka-<JIRA_TICKET_1>** there is a connector named **pg-debezium-source-pgditmcode-uw2** which is using the service user **otr_mcode_event_publisher_service** for the schema registry from the corresponding kafka service **wex-kafka-dev-pci-uw2** <EMAIL_ADDRESS_0>
 
 Thanks!
 
@@ -263,82 +263,82 @@ Thanks!
 ==================================================
 Comment ID: 31614239357841
 Timestamp: 2025-01-08 22:20:06 UTC
-Author: <PERSON> (Aiven Internal)
+Author: <PERSON_19> (Aiven Internal)
 Type: PRIVATE
 Content:
-The working KC and <PERSON> that do not have the ACL:
+The working KC and <PERSON_4> that do not have the ACL:
 
-    Service integrationsSERVICE_INTEGRATION_ID INTEGRATION_TYPE SOURCE DEST ACTIVE ENABLED==================================== ================ =================================================== ===================================================== ====== =======ae536567-cac6-496c-aef6-acfa2205aa3e datadog wex-aws-pci-dev-us-west-2-kafka-connect-0 (2648386) Datadog IT Ops (4ec3e616-b7e9-4412-a7af-9844e0d274a5) true truec5d91fdd-9617-4400-95f2-49bfdb590a52 kafka_connect wex-kafka-dev-pci-uw2 (924602) wex-aws-pci-dev-us-west-2-kafka-connect-0 (2648386) true truef736a334-82f2-4284-927f-1ae6cb9cb884 kafka_logs wex-aws-pci-dev-us-west-2-kafka-connect-0 (2648386) wex-kafka-dev-pci-uw2 (924602) true true
+    Service integrationsSERVICE_INTEGRATION_ID INTEGRATION_TYPE SOURCE DEST ACTIVE ENABLED==================================== ================ =================================================== ===================================================== ====== =======ae536567-cac6-496c-aef6-acfa2205aa3e datadog wex-aws-pci-dev-us-<JIRA_TICKET_2>-kafka-<JIRA_TICKET_1> <SERVICE_NUMBER_1> Datadog IT Ops (4ec3e616-b7e9-4412-a7<JIRA_TICKET_13>e0d274a5) true truec5d91<JIRA_TICKET_3>-4400-95f2-49bfdb590a52 kafka_connect wex-kafka-dev-pci-uw2 <SERVICE_NUMBER_0> wex-aws-pci-dev-us-<JIRA_TICKET_2>-kafka-<JIRA_TICKET_1> <SERVICE_NUMBER_1> true truef736a334-82f2-4284-927f-1ae6cb9cb884 kafka_logs wex-aws-pci-dev-us-<JIRA_TICKET_2>-kafka-<JIRA_TICKET_1> <SERVICE_NUMBER_1> wex-kafka-dev-pci-uw2 <SERVICE_NUMBER_0> true true
 
 
 ==================================================
 Comment ID: 31644092812561
 Timestamp: 2025-01-09 17:28:05 UTC
-Author: <PERSON> (Aiven Internal)
+Author: <PERSON_19> (Aiven Internal)
 Type: PRIVATE
 Content:
 The connector config can not pass the validation. Reproduced the issue and found the solution is to add the acl in the integrated kafka. But don’t know why, and customer has another connector that doesn’t have the acl in the integrated kafka.
 
 The acl
-<URL>
+<URL_8>
 
 Refer to the last internal note for the working connector without the acl.
 
-Put the case back in queue as <PERSON> today.
+Put the case back in queue as <PERSON_18> today.
 
 
 ==================================================
 Comment ID: 31652432810641
 Timestamp: 2025-01-10 02:41:47 UTC
-Author: Ally <PERSON> (Aiven Internal)
+Author: Ally <PERSON_17> (Aiven Internal)
 Type: PRIVATE
 Content:
 Tl;dr
 
-User trying to create a postgres source connector in KC service (`2996837`), attempting to use Avro converter for the Value. They are running into 403 errors when entering schema registry URL (<URL>:19095).
+User trying to create a postgres source connector in KC service (`2996837`), attempting to use Avro converter for the Value. They are running into 403 errors when entering schema registry URL (<URL_7>:19095).
 
 Error message:
 
-    There was an error in the configuration. <URL>gistry.url: Connection failed with HTTP status code 403
+    There was an error in the configuration. <URL_1>gistry.url: Connection failed with HTTP status code 403
 
 
-Service User being used - `ev-dev-entity-events-producer`
+Service User being used - `<USERNAME_0>`
 
-User then updated the <URL>efix to match schema registry ACL resource prefix but error persists when trying to update connector.
+User then updated the topic.prefix to match schema registry ACL resource prefix but error persists when trying to update connector.
 User and pass combo appear to be correct.
 
-<PERSON> was able to reproduce the error and found that using Aiven ACL appears to "fix" this but unsure why. User is unsure this is the fix as they have not needed to do this previously.
+<PERSON_0> was able to reproduce the error and found that using Aiven ACL appears to "fix" this but unsure why. User is unsure this is the fix as they have not needed to do this previously.
 
 An example of where this was not previously required has been provided by the customer:
 
 
-    In the service wex-aws-pci-dev-us-west-2-kafka-connect-0 there is a connector named pg-debezium-source-pgditmcode-uw2 which is using the service user otr_mcode_event_publisher_service for the schema registry from the corresponding kafka service wex-kafka-dev-pci-uw2
+    In the service wex-aws-pci-dev-us-<JIRA_TICKET_2>-kafka-<JIRA_TICKET_1> there is a connector named pg-debezium-source-pgditmcode-uw2 which is using the service user otr_mcode_event_publisher_service for the schema registry from the corresponding kafka service wex-kafka-dev-pci-uw2
 
 
-<PERSON> confirmed the other services that are working do not have the ACL applied that <PERSON> suggested earlier.
+<PERSON_0> confirmed the other services that are working do not have the ACL applied that <PERSON_0> suggested earlier.
 
 
 * * *
 Okay so the first thing that comes to mind is "what differs between the working and non-working services?"
 
-Not working KC service id: `2996837` connector: null, user: `ev-dev-entity-events-producer`
+Not working KC service id: `2996837` connector: null, user: `<USERNAME_0>`
 Working KC service id: `2648386` connector: `pg-debezium-source-pgditmcode-uw2`, user: `otr_mcode_event_publisher_service`
 
 Service config comparison:
 
 
-    2996837----avn-prod service config show 2996837KEY VALUE ========================== ============================admin_user_account aivenalmond_port 30287features {}jolokia_port 6733kafka_connect_port 443letsencrypt Truemain_service_user_account avnadminnode_count 1node_type a4preferred_extra_node_types ['arm-a4']privatelink_port_pool {'max': 27213, 'min': 23214}prometheus_port 9273scratch_size 1073741824volume_count 0volume_size 5368709120WARNING No validation available for service type kafka_connect; validating only base.2648386----avn-prod service config show 2648386KEY VALUE ========================== ============================admin_user_account aivenalmond_port 30287features {}jolokia_port 6733kafka_connect_port 443letsencrypt Truemain_service_user_account avnadminnode_count 3node_type a4preferred_extra_node_types ['arm-a4']privatelink_port_pool {'max': 29206, 'min': 25207}prometheus_port 9273scratch_size 1073741824volume_count 0volume_size 5368709120WARNING No validation available for service type kafka_connect; validating only base.
+    2996837----avn-prod service config show 2996837KEY VALUE ========================== ============================admin_user_account aivenalmond_port 30287features {}jolokia_port 6733kafka_connect_port 443letsencrypt Truemain_service_user_account <USERNAME_6>node_count 1node_type a4preferred_extra_node_types ['arm-a4']privatelink_port_pool {'max': 27213, 'min': 23214}prometheus_port 9273scratch_size 1073741824volume_count 0volume_size 5368709120WARNING No validation available for service type kafka_connect; validating only base.2648386----avn-prod service config show 2648386KEY VALUE ========================== ============================admin_user_account aivenalmond_port 30287features {}jolokia_port 6733kafka_connect_port 443letsencrypt Truemain_service_user_account <USERNAME_6>node_count 3node_type a4preferred_extra_node_types ['arm-a4']privatelink_port_pool {'max': 29206, 'min': 25207}prometheus_port 9273scratch_size 1073741824volume_count 0volume_size 5368709120WARNING No validation available for service type kafka_connect; validating only base.
 
 
 User config:
 
 
-    2996837----avn-prod service user-config show 2996837KEY VALUE ============== ==================================================================ip_filter [{'network': '<IP_ADDRESS>/8', 'description': 'WEX Internal Network'}]public_access {'prometheus': False, 'kafka_connect': False}private_access *REDACTED*2648386----avn-prod service user-config show 2648386KEY VALUE ============== =============================================ip_filter ['<IP_ADDRESS>/0']public_access {'prometheus': False, 'kafka_connect': False}private_access *REDACTED*
+    2996837----avn-prod service user-config show 2996837KEY VALUE ============== ==================================================================ip_filter [{'network': '<IP_ADDRESS_1>/8', 'description': 'WEX Internal Network'}]public_access {'prometheus': False, 'kafka_connect': False}private_access *REDACTED*2648386----avn-prod service user-config show 2648386KEY VALUE ============== =============================================ip_filter ['<IP_ADDRESS_0>/0']public_access {'prometheus': False, 'kafka_connect': False}private_access *REDACTED*
 
 
 
 * * *
-avn-prod <PERSON> -> not enough perms (no ops)
+avn-prod <PERSON_16> -> not enough perms (no ops)
 avn-prod kafka schema-registry-acls -> not enough perms (no ops)
 
 avn-prod service integration user-config show
@@ -353,19 +353,19 @@ avn-prod service integration user-config show
 api kafka acl list
 
 
-    api kafka acl list 2996809response========id topic username permission-------------- ------------------------- ---------------------------------- ------------acl4fb12c8e36e <URL>ference kaas-reference-eu readwriteacl5068c2c5337 <URL>.entity-events ifcs-ev-qa-entity-events-consumer readacl5068c276e25 <URL>.entity-events ev-qa-test-automation readwriteacl5068c2c9507 <URL>.entity-events ev-qa-entity-events-producer writeacl5068c2e66a9 <URL>.entity-events ifcs-ev-dev-entity-events-consumer readacl5068c20bdbd <URL>.entity-events ev-dev-test-automation readwriteacl5068c2a877f <URL>.entity-events ev-ifcs-qa-entity-events-consumer readacl5068c2abcc0 <URL>.entity-events ev-ifcs-qa-entity-events-producer writeacl5068c2f34f6 <URL>.entity-events ev-dev-entity-events-producer writeacl5068c216547 <URL>.entity-events ev-ifcs-qa-test-automation readwriteacl506d6ddfcca <URL>.entity-events ev-ifcs-dev-entity-events-consumer readacl506d6d97a64 <URL>.entity-events ev-ifcs-dev-test-automation readwriteacl506d6de164a <URL>.entity-events ev-ifcs-dev-entity-events-producer writeapi kafka acl list 924602response========id topic username permission-------------- -------------------------------------------------------------------------- -------------------------------------------------- ------------acl38ecab32d8b ag_dev.* ag_dev_poc readwriteacl38ecae05cb0 ag_dev.* ag_dev_poc_consumer readacl38ecaf6a0d0 ag_dev.* ag_dev_poc_producer writeacl3902a621af9 onboarding.example onboarding readwriteacl3bfd4ce56a9 <URL>posits funding_deposit_processing_2022 readwriteacl3bfdbb4fd28 <URL>nk-transactions treasury_transaction_classification_2022 readwriteacl3bfdbb9f5bb <URL>assification-queue treasury_transaction_classification_2022 readacl3bff7a257f4 notification.queue events-filter writeacl3bff7bbb00e notification.queue notification readwriteacl3c50e681f01 funding.disbursements funding_fund_disbursement_2022 writeacl3ce886c8f5d <URL>ttlement schememgmt_mcsa_parser_2022 readwriteacl3cfeba6d506 <URL>ttlement scheme_management_mcsa_parser_2022 readwriteacl3d006b1402e <URL>ttlement scheme_management_settlement_gateway_2022 readwriteacl3e24c545adf <URL>ttlement scheme_management_mcsa_handler_2022 readwriteacl3e3eb43a81e <URL>incipals relationship_account readwriteacl3eb776a6253 <URL>nk-transfer treasury_reval_payment_2022 readwriteacl3eca1765aca <URL>rex exchange-rate writeacl3f0d9908a27 *onboarding.example onboarding readacl404565f6619 <URL>ient-balance finrec_client_balance_2022 readwriteacl4186b683cf8 <URL>ient-balance finrec_bank_reconciliation_2022 readacl41a7a81870f <URL>assification-queue treasury_transaction_ingestion_2022 readwriteacl41a7a83d514 <URL>counts treasury_transaction_ingestion_2022 readwriteacl41d94707bce <URL>d-orders tag_test_card_producer readwriteacl41d9471fcc5 <URL>d-orders tag_dev_card_producer readwriteacl42c8a27013b <URL>ttlement-paid scheme_management_settlement_2022 readacl42c8a21d6c2 <URL>nfiguration scheme_management_settlement_2022 readacl42c8a28998b <URL>ttlement scheme_management_settlement_2022 readacl42de1ef403a <URL>rex ps-treasury-safeguarding-2023 readacl42eea6ae4f7 <URL>rex funding_fund_position_2022 readacl43043da546f <URL>ding.entity-groups funding_fund_position_2022 readwriteacl43043d7b2f6 <URL>ding.entity-groups funding_fund_position_2022 readwriteacl4309c624f9d <URL>ding.entity-groups ps-treasury-safeguarding-2023 readacl4357869fece *.carrier-notifications bemod_carriernotification readwriteacl43ae2da750e <URL>ding.entity-groups funding_deposit_processing_2022 readacl43af4ac656c <URL>ttlement-paid scheme_management_settlement_2022 readwriteacl43f77241f75 <URL>nk-transfer-status treasury_bank_transfer_2022 readwriteacl43f772e4d5d <URL>nk-transfer treasury_bank_transfer_2022 readwriteacl43fc2f54260 <URL>ops-cluster-test-app funding_devops_cluster_test_2023 readwriteacl440059dd6cd <URL>atus notification readwriteacl44465206e8e <URL>nk-transfer-status scheme_management_settlement_gateway_2022 readwriteacl444b8438921 <URL>ding.entity-groups finrec_client_balance_2022 readacl444b84d4b3b <URL>ding.entity-groups finrec_client_balance_2022 readacl449a3a99315 <URL>ivate finrec_bank_reconciliation_2022 readwriteacl449a5f02d45 <URL>nk-transactions finrec_bank_reconciliation_2022 readacl449a5fed282 <URL>counts finrec_bank_reconciliation_2022 readacl44a33c311a0 *.funding.entity-groups analytics readacl44b0a8d8ae1 <URL>ding.entity-groups funding_fund_disbursement_2022 readacl45046e1de2a <URL>ding.entity-groups funding_fund_disbursement_2022 readacl451057d9be9 <URL>ding.entity-groups funding_deposit_processing_2022 readacl45140276c81 *.carrier-notifications cdb_svc readwriteacl452c57e5599 * aa-tim-offset-management readwriteacl452cc0c66fd <URL>ding.entity-groups ps-treasury-safeguarding-2023 readacl4575dd3c260 <URL>nk-transactions funding_deposit_processing_2022 readwriteacl4579e1ae113 <URL>-management ps-treasury-safeguarding-2023 writeacl45c34f32ed2 <URL>nk-transactions funding_fund_disbursement_2022 readacl45c7b6973a5 <URL>ding.entity-groups gfm-to-fe-widget-consumer readacl45c7b62f85c <URL>ding.entity-groups gfm-to-fe-widget-consumer readacl45f2201034a <URL>nk-reconciliation.dlq finrec_bank_reconciliation_2022 readwriteacl461e3117502 <URL>counts ps-treasury-safeguarding-2023 readacl461ed9db8b8 <URL>ient-balance.dlq finrec_client_balance_2022 readwriteacl46613c13fb7 <URL>ttlement finrec_bank_reconciliation_2022 readacl46a15204d1a <URL>nfiguration scheme_management_mcsa_parser_2022 readwriteacl46b9982dbbd <URL>pany tag_test_company adminacl46bb7a8917a <URL>ttlement ps-treasury-funds-forecasting-2023 readacl46bf87a4012 <URL>pany tag_dev_company adminacl46c6f451431 <URL>counts ps-treasury-funds-forecasting-2023 readacl46e5fa32445 <URL>le-gateway.event-transaction.* platform-file_gateway-sourcedata readwriteacl46e5fab53c2 <URL>le-gateway.event-transaction.* platform-file_gateway-transactionlogging readwriteacl46e73f6eaa1 <URL>ttle-file-clearings platform-file_gateway-kafkaconnector readwriteacl46ec0659989 dev-otr.test-topic otr.event-publisher-service writeacl46ec0600ba8 dev-otr.test-topic otr.test-event-consumer readacl46ecf7b298c *encompass.?*.merchantlog encompass readwriteacl46ecf79b0e8 *encompass.?*.transaction encompass readwriteacl46ecf7669db encompass.?*.test encompass readwriteacl46ecf77938a *encompass.?*.purchasecardlog encompass readwriteacl4714050b5f1 <URL>pany gfm-to-fe-widget-consumer readacl4750776a179 <URL>reams.* fleet_services_producer readwriteacl475f817fc6f <URL>mple-tag-transactions finrec_client_balance_2022 readacl47638263724 <URL>nk-transfer.* bank-transfer readwriteacl47906d4a75e <URL>rstmile backoff-fuelcode readwriteacl47906d97014 backoff.dit.fuelcode backoff-fuelcode readwriteacl47909c27049 <URL>rstmile backoff-fuelcode readwriteacl47909c8a5d3 <URL>rtner.fuelcode backoff-fuelcode readwriteacl47909c1d741 <URL>rstmile backoff-fuelcode readwriteacl47909c81111 <URL>t.fuelcode backoff-fuelcode readwriteacl47909c4bb55 <URL>ansaction backoff-fuelcode readwriteacl47909c31850 <URL>ansaction backoff-fuelcode readwriteacl47909ce9df8 <URL>ansaction backoff-fuelcode readwriteacl47a158573a0 <URL>pany finrec_client_balance_2022 readacl47fb1e48bc2 <URL>rex ps-treasury-funds-forecasting-2023 readacl488efb4c5b5 <URL>ymentprocessing.<PERSON> readacl4898e8c7069 <URL>pany <PERSON> readacl489a0473238 <URL>ding.entity-groups tag_dev_aiven_accounts_receivable_user readacl489a04aea84 <URL>ding.entity-groups tag_dev_aiven_accounts_receivable_user readacl489a09a46ee <URL>ding.entity-groups tag_test_aiven_accounts_receivable_user readacl489a09e6812 <URL>ding.entity-groups tag_test_aiven_accounts_receivable_user readacl48c05a9f7e6 <URL>pany funding_deposit_processing_2022 readacl48c074f09ff <URL>ymentprocessing.Ledger funding_fund_disbursement_2022 readacl48c074c5dc6 <URL>pany funding_fund_disbursement_2022 readacl48c39a7ac4a <URL>ttle-file-clearings scheme_management_mcsa_parser_2022 readacl48e010cf68c *encompass.?*.card plasticcgs readacl48e0109442b *encompass.?*.card encompass readwriteacl49088cfee24 <URL>count.* ev_mesh_consumer readacl4934a02e00d <URL>neration.* cgs_dev_test readwriteacl4934a0755ba *<URL>d.* cgs_dev_test readwriteacl4956c1d5c9d <URL>nPostedException tag_dev_non_posted_exceptions adminacl497d5dfaa90 <URL>atus.* plasticcgs readwriteacl497d5d9d8b5 <URL>neration.* plasticcgs readwriteacl497d5d4593d *encompass.?*<URL>sponse cgs_dev_test readwriteacl497d5d1b3f2 *encompass.?*<URL>sponse plasticcgs readwriteacl497d5dc0feb *<URL>d.* plasticcgs readwriteacl4985e118d42 gopro-consumer-testing gopro-consumer-dotnet-2023 readwriteacl498a79d0d5c *.communication becomms_communication readwriteacl49a4cb671fd owi-verify-user-events-test owi-migration-app-user-test readwriteacl49a4cb389ab owi-verify-user-events-dev owi-migration-app-user-dev readwriteacl49d294a9e17 owi-verify-user-events-dev owi-migration-consumer-user-dev readacl49d29473ce6 owi-verify-user-events-test owi-migration-consumer-user-test readacl49f5a48bca9 <URL>ivate funding_fund_disbursement_2022 readwriteacl49f61c49ad1 <URL>counts brs_perf_finrec_bank_reconciliation_2023 readwriteacl49f61cdde7d <URL>ivate brs_perf_finrec_bank_reconciliation_2023 readwriteacl49f61c139bc <URL>nk-transactions brs_perf_finrec_bank_reconciliation_2023 readwriteacl49f61c00de5 <URL>ttlement brs_perf_finrec_bank_reconciliation_2023 readwriteacl49f61c3c9aa <URL>nk-reconciliation.dlq brs_perf_finrec_bank_reconciliation_2023 readwriteacl49f61ca2e09 <URL>ient-balance brs_perf_finrec_bank_reconciliation_2023 readwriteacl49f61c982b0 <URL>e brs_perf_finrec_bank_reconciliation_2023 readwriteacl4a21c0fd6eb card-digitization-service.* card-digitization-service readwriteacl4a2c029aa09 billpay.ledger* billpay-ledger readwriteacl4a2c789a016 vams-repair-order* bf-vams readwriteacl4a2d6562a7e <URL>llpay.ledger.* billpay-ledger readwriteacl4a4e349e308 <URL>ymentprocessing.Ledger gfm-to-fe-widget-consumer readacl4a5409be037 *encompass.?*.card betelgeuse-kafka readwriteacl4a67873d4d1 <URL>ymentprocessing.Ledger funding_fund_position_2022 readacl4a678dfeff3 gopro-consumer-testing gopro-consumer-poc-2023 readacl4a7107ef20c <URL>ymentprocessing.Ledger encompass-funding-alerting-consumer readacl4a7107a596d <URL>pany encompass-funding-alerting-consumer readacl4a7107f10db <URL>ding.entity-groups encompass-funding-alerting-consumer readacl4a710748282 <URL>ding.entity-groups encompass-funding-alerting-consumer readacl4a751160403 <URL>rius gfm-to-fe-widget-consumer readwriteacl4a7aedaaaab <URL>fTransaction-1 bf-PaymentManagerAPI readwriteacl4a7aedb3221 <URL>d.* bf-PaymentManagerAPI readacl4a8968e722e <URL>nPostedException finrec_bank_reconciliation_2022 readacl4a8de9980f6 <URL>nPostedException brs_perf_finrec_bank_reconciliation_2023 readwriteacl4abfc095195 <URL>ymentprocessing.Ledger tag_dev_ledger adminacl4abfc144c5c <URL>ymentprocessing.Ledger tag_test_ledger adminacl4ac2038efe1 <URL>nPostedException tag_test_non_posted_exceptions adminacl4ac73d7b0f0 <URL>ymentprocessing.Ledger funding_fund_position_2022_perftest readwriteacl4ac73de2654 <URL>pany funding_fund_position_2022_perftest readacl4ac73d1c71d <URL>ding.entity-groups funding_fund_position_2022_perftest readwriteacl4ac73d9d809 <URL>rex funding_fund_position_2022_perftest readwriteacl4ac73dfafe0 <URL>ding.entity-groups funding_fund_position_2022_perftest readwriteacl4b2865f347d <URL>incipals events-filter readwriteacl4b2e9001f55 *.benefits-platform benefitsplatform-testing readwriteacl4b40df26551 <URL>ics event-hub-api writeacl4b56d2fa091 <URL>ding.entity-groups snowflake_service_user readacl4b56d218ac8 <URL>ding.entity-groups snowflake_service_user readacl4b56d21643c <URL>ymentprocessing.Ledger snowflake_service_user readacl4b56d2f75e1 <URL>pany snowflake_service_user readacl4b816886d8a <URL>ttlement ps-finrec-settlementreconciliation-2023 readacl4b8168fffd3 <URL>ttlement ps-finrec-settlementreconciliation-test-2023 writeacl4b816800cf0 <URL>ttle-file-clearings ps-finrec-settlementreconciliation-test-2023 writeacl4b8168473ef <URL>ivate ps-finrec-settlementreconciliation-2023 readwriteacl4b8168e3dd4 <URL>ttlement <PERSON> readacl4b8168283b4 <URL>ttlement-reconciliation.dlq ps-finrec-settlementreconciliation-2023 readwriteacl4b81689caed <URL>ttle-file-clearings ps-finrec-settlementreconciliation-2023 readacl4b816813c81 <URL>ttle-file-clearings ps-finrec-settlementreconciliation-2023 readacl4b81682c732 <URL>mple-tag-npe-transactions ps-finrec-settlementreconciliation-2023 readacl4b81681b4fe <URL>ttlement-rec.tag-npe ps-finrec-settlementreconciliation-2023 readacl4b81682088b <URL>ttlement-rec.tag-npe ps-finrec-settlementreconciliation-test-2023 writeacl4b816802696 <URL>ttlement-rec.tag-transactions ps-finrec-settlementreconciliation-test-2023 writeacl4b81680fe2a <URL>mple-tag-transactions ps-finrec-settlementreconciliation-2023 readacl4b816818ab3 <URL>ttlement-rec.tag-transactions ps-finrec-settlementreconciliation-2023 readacl4b81687c115 <URL>nPostedException ps-finrec-settlementreconciliation-2023 readacl4b8168b6935 <URL>ymentprocessing.<PERSON> readacl4b834c866b0 <URL>urce-data.* platform-file_gateway-posted_transaction_processor readacl4ba630f054b *encompass.?*.stppayment encompass readwriteacl4bab0277960 <URL>ymentprocessing.Ledger snowflake_service_user readacl4bab02e372e <URL>ding.entity-groups snowflake_service_user readacl4bab029ec7e <URL>ding.entity-groups snowflake_service_user readacl4bab020cf4a <URL>pany snowflake_service_user readacl4bab027b6a5 <URL>ymentprocessing.Ledger snowflake_service_user readacl4bab0249fd9 <URL>pany snowflake_service_user readacl4bab02c8c2c <URL>ding.entity-groups snowflake_service_user readacl4bab025516c <URL>ding.entity-groups snowflake_service_user readacl4bc7f25fe7b encompass.*.stppayment bf-PaymentManagerAPI readacl4bc7f21a0ad <URL>urce-data.* platform-file_gateway-sourcedata readwriteacl4bc7f2629ce <URL>ference kaas.migration-reference readwriteacl4bc7f2469aa <URL>nefits sample-benefits readwriteacl4bcc11a8c57 <URL>atus epec-qa readwriteacl4bcc11daba5 <URL>incipals epec-qa readwriteacl4bcc11c1dac notification.queue epec-qa readwriteacl4bcc9f2dda5 <URL>rex epec-qa readwriteacl4bf3f5fb71e <URL>nfirmation-statement <URL>nfirmation-statement readwriteacl4bf3f538639 <URL>nfirmation-statement <URL>nfirmation-statement readwriteacl4c6ec85c498 <URL>thorization.* acs readwriteacl4c6ec820fde <URL>thorization.* fdg readacl4c7278c8540 <URL>ops-cluster-test-app-2 funding_devops_cluster_test_2023_2 readwriteacl4c7b2ec1676 <URL>sult.queue epec-qa readwriteacl4c7b2ed4529 <URL>sult.queue notification readwriteacl4c97664a94e bf-vin-vehicleinfo-json-public* bf-vin-manager-api readwriteacl4cb8725b0f8 <URL>heduler event-hub-scheduler writeacl4cb90e3213f <PERSON> readacl4cb949bbe83 <URL>nt events-filter readacl4cb94909752 <URL>ked events-filter readacl4cb9496ae44 <URL>ding.entity-groups events-filter readacl4cb9496b597 <URL>rex events-filter readacl4cb9491c21f <URL>jected events-filter readacl4cb95de8423 <URL>ics events-filter readacl4cb99c0923b test events-filter readacl4cc5805447e <URL>counts_<URL>pany_unpaid_balances tag_dev_unpaid_balance_producer writeacl4cc5805af4f <URL>counts_<URL>pany_unpaid_balances tag_test_unpaid_balance_producer writeacl4cc92c954c7 *loc-automation* bemod_loc readwriteacl4ce59ea744a <URL>d events-filter readacl4ce59e763e9 <URL>f events-filter writeacl4ce59e6d4f6 <URL>d.encompass-wex events-filter writeacl4cf1296b9b8 <URL>bezium* <URL>bezium readwriteacl4d254b956e1 <URL>nary ps-funding-canary readwriteacl4d668e7824f <URL>count card-digitization-service readacl4d668ee5f9f <URL>count card-digitization-service readacl4d7a5c16fda <URL>pany tag_test_card_service_company_consumer readacl4d7a5c654e8 <URL>pany tag_dev_card_service_company_consumer readacl4d7e4d94609 <URL>fTransaction-1 bf-transys-team readwriteacl4da509162a7 <URL>sponse bf-transys-team readwriteacl4da56c3451d <URL>counts_<URL>pany_unpaid_balances dsc-statement-summary-consumer readacl4dd16969dfb plastic_card_order_processor.poc plastic_card_order_processor_kafka_user readwriteacl4dfb5231144 * costa adminacl4e051acc259 <URL> gfm-to-fe-widget-consumer readwriteacl4e1bf054fd8 <URL>ure epec-qa readwriteacl4e1bf014b6f <URL>ure epec-qa readwriteacl4e1bf040a80 <URL>ure notification readwriteacl4e1bf005fec <URL>ure notification readwriteacl4e1bf0a394d <URL>ure epec-qa readwriteacl4e1bf0ce0de <URL>ure notification readwriteacl4e1e15cc017 <URL>ttle-file-clearings finrec_bank_reconciliation_2022 readacl4e20831f8d8 <URL>munication event-hub-scheduler writeacl4e20834fff6 <URL>munication event-hub-scheduler writeacl4e42629f5f6 apigee-service apigee-service readacl4e432e55e06 <URL>f event-filter writeacl4e432e3162d <URL>d.encompass-wex event-filter writeacl4e432e71d12 <URL>d event-filter readacl4e638c21f0c apigee-service event-hub-scheduler writeacl4e6cefd506f <URL>counts_<URL>pany_unpaid_balances funding_fund_disbursement_2022 readacl4e743da80fb <URL>thorization_log.dlq fdg readwriteacl4e7b8dcfa01 <URL>f nam_mc_card_consumer readacl4e7b8d8eea6 <URL>d.encompass-wex betelgeuseCardOrders readacl4e8d0afbd7b <URL>counts_<URL>pany_statement_generated tag_dev_company_statement_producer writeacl4e97ead5a99 <URL>d tag_test_card_service_producer writeacl4e97ea4afc0 <URL>d tag_dev_card_service_producer writeacl4e98db1413e <URL>counts_<URL>atement_cycle_complete tag_dev_statement_cycle_producer writeacl4e98dbeb1bd <URL>counts_<URL>atement_cycle_complete tag_test_statement_cycle_producer writeacl4e996fe2382 <URL>counts_<URL>pany_statement_generated tag_test_company_statement_producer <PERSON> <URL>ntracts otr-moneycode-service readacl4e9d47fcadd <URL>ntracts otr-contract-service writeacl4eb21ccdf22 kaas.test.temporary <PERSON>-reference readwriteacl4eb39a0a012 <URL>ssage-listener.* platform-file_gateway-messagelistener readwriteacl4eb39a21857 <URL>ssage-listener.* platform-file_gateway-messagelistener readacl4eb7c7e08b5 identity_verification_<URL>atus-qa csi-steam readwriteacl4eb7c7dfed6 identity_verification_<URL>atus-int csi-steam readwriteacl4ebe3ccf16d kaas.* <URL>bezium readwriteacl4ebef24042f <URL>es bp-qa-businesses readwriteacl4ed65c540bb <URL>nary ps-funding-canary-prototype readwriteacl4edc2ec42f9 <URL>counts_<URL>pany_statement_generated dsc-statement-summary-consumer readacl4edc2eb0015 <URL>counts_<URL>atement_cycle_complete dsc-statement-summary-consumer readacl4ee0b511691 dit_otr_mcode* otr_mcode_event_publisher_service <PERSON>.* kaas-reference readwriteacl4eea8aa86da <URL>nk-transactions analytics readacl4eea8ab5f06 <URL>nk-transactions analytics readacl4eea8a634cb <URL>nk-transactions analytics readacl4eea8aa9309 <URL>nk-transactions snowflake_service_user readacl4eea8aad449 <URL>nk-transactions snowflake_service_user readacl4eea8a101bc <URL>nk-transactions snowflake_service_user readacl4eeac4d9278 <URL>ntracts otr-moneycode-service readacl4eeac4a82c7 <URL>ntracts otr-contract-service writeacl4eeac43bce0 <URL>ntracts otr-moneycode-service readacl4eeac489ae5 <URL>ntracts <PERSON>-contract-service writeacl4f07dfed794 bf-vin-mesh-json-public* bf-vin-manager-api readwriteacl4f13663cfcd <URL>p-file-importer.* platform-file_gateway-ptpfileimporter readwriteacl4f17e1fd096 dit_otr_backoff.loyalty.* otr_backoff_loyalty_event_publisher_service <PERSON> dit_otr_<URL>.* otr_backoff_report_event_publisher_service readwriteacl4f17e1cc219 dit_otr_<URL>ken.* otr_backoff_token_event_publisher_service readwriteacl4f17e16f228 dit_otr_backoff.fuelcode.* otr_backoff_fuelcode_event_publisher_service readwriteacl4f3b9a4959e <URL>d.encompass-wex plastic_card_order_processor_card_topic_consumer readwriteacl4f4ff1f651d <PERSON>-to-fe-widget-consumer readwriteacl4f614deb59d *encompass.?*.account encompass writeacl4fa699d259b funding.disbursements funding_deposit_processing_2022 readacl4faa589f074 dit_otr_mcode.* otr_mc_snowflake_aiven_user readacl4fc70da3f0d dit_otr_backoff.* otr_10_4_snowflake_aiven_user readacl4fcddfc3cf6 source-*.dit_otr_mcode* otr_mcode_event_publisher_service readacl4fdce29df49 scheme-management-sa-parser.dlq scheme_management_mcsa_parser_2022 readwriteacl4ff2ee9473d kaas.onboarding kaas-onboarding-user readwriteacl50744e773ab <URL>atus.* owi-migration-app-user-dev readwriteacl50744e504a9 *<URL>atus owi-migration-app-user-dev readacl50744ee8b01 *<URL>atus owi-migration-app-user-test readacl50744efed43 <URL>atus.* owi-migration-app-user-test readwriteacl5075e8df537 <URL>p-file-importer.* platform-file_gateway-kafkaconnector readwriteacl5076c76e863 *.initial-data-feed <URL>itial-data-feed readwrite
+    api kafka acl list 2996809response========id topic <USERNAME_2> ------------------------- ---------------------------------- ------------acl4fb12c8e36e kaas.emea.reference kaas-reference-eu readwriteacl5068c2c5337 ev.qa.entity-events ifcs-ev-qa-entity-events-consumer readacl5068c276e25 ev.qa.entity-events ev-qa-test-automation readwriteacl5068c2c9507 ev.qa.entity-events <USERNAME_5> writeacl5068c2e66a9 ev.dev.entity-events ifcs-ev-dev-entity-events-consumer readacl5068c20bdbd ev.dev.entity-events ev-dev-test-automation readwriteacl5068c2a877f ev.ifcs.qa.entity-events ev-ifcs-qa-entity-events-consumer readacl5068c2abcc0 ev.ifcs.qa.entity-events <USERNAME_4> writeacl5068c2f34f6 ev.dev.entity-events <USERNAME_0> writeacl5068c216547 ev.ifcs.qa.entity-events ev-ifcs-qa-test-automation readwriteacl506d6ddfcca ev.ifcs.dev.entity-events ev-ifcs-dev-entity-events-consumer readacl506d6d97a64 ev.ifcs.dev.entity-events ev-ifcs-dev-test-automation readwriteacl506d6de164a ev.ifcs.dev.entity-events <USERNAME_3> writeapi kafka acl list 924602response========id topic <USERNAME_2> -------------------------------------------------------------------------- -------------------------------------------------- ------------acl38ecab32d8b ag_dev.* ag_dev_poc readwriteacl38ecae05cb0 ag_dev.* ag_dev_poc_consumer readacl38ecaf6a0d0 ag_dev.* ag_dev_poc_producer writeacl3902a621af9 onboarding.example onboarding readwriteacl3bfd4ce56a9 funding.deposits funding_deposit_processing_2022 readwriteacl3bfdbb4fd28 treasury.bank-transactions treasury_transaction_classification_2022 readwriteacl3bfdbb9f5bb treasury.classification-queue treasury_transaction_classification_2022 readacl3bff7a257f4 notification.queue events-filter writeacl3bff7bbb00e notification.queue notification readwriteacl3c50e681f01 funding.disbursements funding_fund_disbursement_2022 writeacl3ce886c8f5d scheme-management.settlement schememgmt_mcsa_parser_2022 readwriteacl3cfeba6d506 scheme-management.settlement scheme_management_mcsa_parser_2022 readwriteacl3d006b1402e scheme-management.settlement scheme_management_settlement_gateway_2022 readwriteacl3e24c545adf scheme-management.settlement scheme_management_mcsa_handler_2022 readwriteacl3e3eb43a81e payments.principals relationship_account readwriteacl3eb776a6253 treasury.bank-transfer treasury_reval_payment_2022 readwriteacl3eca1765aca payments.forex exchange-rate writeacl3f0d9908a27 *onboarding.example onboarding readacl404565f6619 finrec.client-balance finrec_client_balance_2022 readwriteacl4186b683cf8 finrec.client-balance finrec_bank_reconciliation_2022 readacl41a7a81870f treasury.classification-queue treasury_transaction_ingestion_2022 readwriteacl41a7a83d514 treasury.accounts treasury_transaction_ingestion_2022 readwriteacl41d94707bce test-issuing.account-management.card-orders tag_test_card_producer readwriteacl41d9471fcc5 dev-issuing.account-management.card-orders tag_dev_card_producer readwriteacl42c8a27013b scheme-management.settlement-paid scheme_management_settlement_2022 readacl42c8a21d6c2 scheme-management.configuration scheme_management_settlement_2022 readacl42c8a28998b scheme-management.settlement scheme_management_settlement_2022 readacl42de1ef403a payments.forex ps-treasury-<JIRA_TICKET_12> readacl42eea6ae4f7 payments.forex funding_fund_position_2022 readacl43043da546f configuration.funding.entity-groups funding_fund_position_2022 readwriteacl43043d7b2f6 transaction.funding.entity-groups funding_fund_position_2022 readwriteacl4309c624f9d configuration.funding.entity-groups ps-treasury-<JIRA_TICKET_12> readacl4357869fece *.carrier-notifications bemod_carriernotification readwriteacl43ae2da750e configuration.funding.entity-groups funding_deposit_processing_2022 readacl43af4ac656c scheme-management.settlement-paid scheme_management_settlement_2022 readwriteacl43f77241f75 treasury.bank-transfer-status treasury_bank_transfer_2022 readwriteacl43f772e4d5d treasury.bank-transfer treasury_bank_transfer_2022 readwriteacl43fc2f54260 funding.devops-cluster-test-app funding_devops_cluster_test_2023 readwriteacl440059dd6cd notification.status notification readwriteacl44465206e8e treasury.bank-transfer-status scheme_management_settlement_gateway_2022 readwriteacl444b8438921 transaction.funding.entity-groups finrec_client_balance_2022 readacl444b84d4b3b configuration.funding.entity-groups finrec_client_balance_2022 readacl449a3a99315 finrec.bank-reconciliation.private finrec_bank_reconciliation_2022 readwriteacl449a5f02d45 treasury.bank-transactions finrec_bank_reconciliation_2022 readacl449a5fed282 treasury.accounts finrec_bank_reconciliation_2022 readacl44a33c311a0 *.funding.entity-groups analytics readacl44b0a8d8ae1 configuration.funding.entity-groups funding_fund_disbursement_2022 readacl45046e1de2a transaction.funding.entity-groups funding_fund_disbursement_2022 readacl451057d9be9 transaction.funding.entity-groups funding_deposit_processing_2022 readacl45140276c81 *.carrier-notifications cdb_svc readwriteacl452c57e5599 * aa-tim-offset-management readwriteacl452cc0c66fd transaction.funding.entity-groups ps-treasury-<JIRA_TICKET_12> readacl4575dd3c260 treasury.bank-transactions funding_deposit_processing_2022 readwriteacl4579e1ae113 treasury.cash-management ps-treasury-<JIRA_TICKET_12> writeacl45c34f32ed2 treasury.bank-transactions funding_fund_disbursement_2022 readacl45c7b6973a5 transaction.funding.entity-groups gfm-to-fe-widget-consumer readacl45c7b62f85c configuration.funding.entity-groups gfm-to-fe-widget-consumer readacl45f2201034a finrec.bank-reconciliation.dlq finrec_bank_reconciliation_2022 readwriteacl461e3117502 treasury.accounts ps-treasury-<JIRA_TICKET_12> readacl461ed9db8b8 finrec.client-balance.dlq finrec_client_balance_2022 readwriteacl46613c13fb7 scheme-management.settlement finrec_bank_reconciliation_2022 readacl46a15204d1a scheme-management.configuration scheme_management_mcsa_parser_2022 readwriteacl46b9982dbbd issuing.account-management.company tag_test_company adminacl46bb7a8917a scheme-management.settlement ps-treasury-funds-<JIRA_TICKET_11> readacl46bf87a4012 dev-issuing.account-management.company tag_dev_company adminacl46c6f451431 treasury.accounts ps-treasury-funds-<JIRA_TICKET_11> readacl46e5fa32445 platform.file-gateway.event-transaction.* platform-file_gateway-sourcedata readwriteacl46e5fab53c2 platform.file-gateway.event-transaction.* platform-file_gateway-transactionlogging readwriteacl46e73f6eaa1 platform.file-gateway.settle-file-clearings platform-file_gateway-kafkaconnector readwriteacl46ec0659989 dev-otr.test-topic otr.event-publisher-service writeacl46ec0600ba8 dev-otr.test-topic otr.test-event-consumer readacl46ecf7b298c *encompass.?*.merchantlog encompass readwriteacl46ecf79b0e8 *encompass.?*.transaction encompass readwriteacl46ecf7669db encompass.?*.test encompass readwriteacl46ecf77938a *encompass.?*.purchasecardlog encompass readwriteacl4714050b5f1 issuing.account-management.company gfm-to-fe-widget-consumer readacl4750776a179 com.wex.fleet.streams.* fleet_services_producer readwriteacl475f817fc6f finrec.sample-tag-transactions finrec_client_balance_2022 readacl47638263724 payment-rails.bank-transfer.* bank-transfer readwriteacl47906d4a75e backoff.dit.firstmile backoff-fuelcode readwriteacl47906d97014 backoff.dit.fuelcode backoff-fuelcode readwriteacl47909c27049 backoff.partner.firstmile backoff-fuelcode readwriteacl47909c8a5d3 backoff.partner.fuelcode backoff-fuelcode readwriteacl47909c1d741 backoff.sit.firstmile backoff-fuelcode readwriteacl47909c81111 backoff.sit.fuelcode backoff-fuelcode readwriteacl47909c4bb55 backoff.sit.transaction backoff-fuelcode readwriteacl47909c31850 backoff.partner.transaction backoff-fuelcode readwriteacl47909ce9df8 backoff.dit.transaction backoff-fuelcode readwriteacl47a158573a0 issuing.account-management.company finrec_client_balance_2022 readacl47fb1e48bc2 payments.forex ps-treasury-funds-<JIRA_TICKET_11> readacl488efb4c5b5 wex.issuing.paymentprocessing.<PERSON_15> readacl4898e8c7069 issuing.account-management.company <PERSON_14> readacl489a0473238 transaction.funding.entity-groups tag_dev_aiven_accounts_receivable_user readacl489a04aea84 configuration.funding.entity-groups tag_dev_aiven_accounts_receivable_user readacl489a09a46ee transaction.funding.entity-groups tag_test_aiven_accounts_receivable_user readacl489a09e6812 configuration.funding.entity-groups tag_test_aiven_accounts_receivable_user readacl48c05a9f7e6 issuing.account-management.company funding_deposit_processing_2022 readacl48c074f09ff wex.issuing.paymentprocessing.Ledger funding_fund_disbursement_2022 readacl48c074c5dc6 issuing.account-management.company funding_fund_disbursement_2022 readacl48c39a7ac4a platform.file-gateway.settle-file-clearings scheme_management_mcsa_parser_2022 readacl48e010cf68c *encompass.?*.card plasticcgs readacl48e0109442b *encompass.?*.card encompass readwriteacl49088cfee24 com.wex.fleet.streams.account.* ev_mesh_consumer readacl4934a02e00d fis.card.generation.* cgs_dev_test readwriteacl4934a0755ba *encompass.order.card.* cgs_dev_test readwriteacl4956c1d5c9d dev-wex.issuing.paymentprocessing.NonPostedException tag_dev_non_posted_exceptions adminacl497d5dfaa90 fis.card.status.* plasticcgs readwriteacl497d5d9d8b5 fis.card.generation.* plasticcgs readwriteacl497d5d4593d *encompass.?*.card.response cgs_dev_test readwriteacl497d5d1b3f2 *encompass.?*.card.response plasticcgs readwriteacl497d5dc0feb *encompass.order.card.* plasticcgs readwriteacl4985e118d42 gopro-consumer-testing gopro-consumer-<JIRA_TICKET_10> readwriteacl498a79d0d5c *.communication becomms_communication readwriteacl49a4cb671fd owi-verify-user-events-test owi-migration-app-user-test readwriteacl49a4cb389ab owi-verify-user-events-dev owi-migration-app-user-dev readwriteacl49d294a9e17 owi-verify-user-events-dev owi-migration-consumer-user-dev readacl49d29473ce6 owi-verify-user-events-test owi-migration-consumer-user-test readacl49f5a48bca9 funding.fund-disbursement.private funding_fund_disbursement_2022 readwriteacl49f61c49ad1 brs-perf.treasury.accounts brs_perf_finrec_bank_reconciliation_2023 readwriteacl49f61cdde7d brs-perf.finrec.bank-reconciliation.private brs_perf_finrec_bank_reconciliation_2023 readwriteacl49f61c139bc brs-perf.treasury.bank-transactions brs_perf_finrec_bank_reconciliation_2023 readwriteacl49f61c00de5 brs-perf.scheme-management.settlement brs_perf_finrec_bank_reconciliation_2023 readwriteacl49f61c3c9aa brs-perf.finrec.bank-reconciliation.dlq brs_perf_finrec_bank_reconciliation_2023 readwriteacl49f61ca2e09 brs-perf.finrec.client-balance brs_perf_finrec_bank_reconciliation_2023 readwriteacl49f61c982b0 brs-perf.brs.tag.npe brs_perf_finrec_bank_reconciliation_2023 readwriteacl4a21c0fd6eb card-digitization-service.* card-digitization-service readwriteacl4a2c029aa09 billpay.ledger* billpay-ledger readwriteacl4a2c789a016 vams-repair-order* bf-vams readwriteacl4a2d6562a7e auto.qlik.billpay.ledger.* billpay-ledger readwriteacl4a4e349e308 wex.issuing.paymentprocessing.Ledger gfm-to-fe-widget-consumer readacl4a5409be037 *encompass.?*.card betelgeuse-kafka readwriteacl4a67873d4d1 wex.issuing.paymentprocessing.Ledger funding_fund_position_2022 readacl4a678dfeff3 gopro-consumer-testing gopro-consumer-<JIRA_TICKET_9> readacl4a7107ef20c wex.issuing.paymentprocessing.Ledger encompass-funding-alerting-consumer readacl4a7107a596d issuing.account-management.company encompass-funding-alerting-consumer readacl4a7107f10db configuration.funding.entity-groups encompass-funding-alerting-consumer readacl4a710748282 transaction.funding.entity-groups encompass-funding-alerting-consumer readacl4a751160403 test.sirius gfm-to-fe-widget-consumer readwriteacl4a7aedaaaab com.wex.fleet.streams.naf.<JIRA_TICKET_5> bf-PaymentManagerAPI readwriteacl4a7aedb3221 com.wex.fleet.streams.card.* bf-PaymentManagerAPI readacl4a8968e722e wex.issuing.paymentprocessing.NonPostedException finrec_bank_reconciliation_2022 readacl4a8de9980f6 brs-perf.wex.issuing.paymentprocessing.NonPostedException brs_perf_finrec_bank_reconciliation_2023 readwriteacl4abfc095195 dev-wex.issuing.paymentprocessing.Ledger tag_dev_ledger adminacl4abfc144c5c wex.issuing.paymentprocessing.Ledger tag_test_ledger adminacl4ac2038efe1 wex.issuing.paymentprocessing.NonPostedException tag_test_non_posted_exceptions adminacl4ac73d7b0f0 perftest.wex.issuing.paymentprocessing.Ledger funding_fund_position_2022_perftest readwriteacl4ac73de2654 perftest.issuing.account-management.company funding_fund_position_2022_perftest readacl4ac73d1c71d perftest.transaction.funding.entity-groups funding_fund_position_2022_perftest readwriteacl4ac73d9d809 perftest.payments.forex funding_fund_position_2022_perftest readwriteacl4ac73dfafe0 perftest.configuration.funding.entity-groups funding_fund_position_2022_perftest readwriteacl4b2865f347d payments.principals events-filter readwriteacl4b2e9001f55 *.benefits-platform benefitsplatform-testing readwriteacl4b40df26551 events-filter.topics event-hub-api writeacl4b56d2fa091 configuration.funding.entity-groups snowflake_service_user readacl4b56d218ac8 transaction.funding.entity-groups snowflake_service_user readacl4b56d21643c wex.issuing.paymentprocessing.Ledger snowflake_service_user readacl4b56d2f75e1 issuing.account-management.company snowflake_service_user readacl4b816886d8a scheme-management.settlement ps-finrec-<JIRA_TICKET_7> readacl4b8168fffd3 settlement-reconciliation.mock.scheme-management.settlement ps-finrec-settlementreconciliation-<JIRA_TICKET_8> writeacl4b816800cf0 settlement-reconciliation.mock.platform.file-gateway.settle-file-clearings ps-finrec-settlementreconciliation-<JIRA_TICKET_8> writeacl4b8168473ef finrec.settlement-reconciliation.private ps-finrec-<JIRA_TICKET_7> readwriteacl4b8168e3dd4 settlement-reconciliation.mock.scheme-management.settlement <PERSON_13> readacl4b8168283b4 finrec.settlement-reconciliation.dlq ps-finrec-<JIRA_TICKET_7> readwriteacl4b81689caed settlement-reconciliation.mock.platform.file-gateway.settle-file-clearings ps-finrec-<JIRA_TICKET_7> readacl4b816813c81 platform.file-gateway.settle-file-clearings ps-finrec-<JIRA_TICKET_7> readacl4b81682c732 finrec.settlement-rec.sample-tag-npe-transactions ps-finrec-<JIRA_TICKET_7> readacl4b81681b4fe settlement-reconciliation.mock.finrec.settlement-rec.tag-npe ps-finrec-<JIRA_TICKET_7> readacl4b81682088b settlement-reconciliation.mock.finrec.settlement-rec.tag-npe ps-finrec-settlementreconciliation-<JIRA_TICKET_8> writeacl4b816802696 settlement-reconciliation.mock.finrec.settlement-rec.tag-transactions ps-finrec-settlementreconciliation-<JIRA_TICKET_8> writeacl4b81680fe2a finrec.settlement-rec.sample-tag-transactions ps-finrec-<JIRA_TICKET_7> readacl4b816818ab3 settlement-reconciliation.mock.finrec.settlement-rec.tag-transactions ps-finrec-<JIRA_TICKET_7> readacl4b81687c115 wex.issuing.paymentprocessing.NonPostedException ps-finrec-<JIRA_TICKET_7> readacl4b8168b6935 wex.issuing.paymentprocessing.<PERSON_12> readacl4b834c866b0 platform.file-gateway.source-data.* platform-file_gateway-posted_transaction_processor readacl4ba630f054b *encompass.?*.stppayment encompass readwriteacl4bab0277960 source-uw2.wex.issuing.paymentprocessing.Ledger snowflake_service_user readacl4bab02e372e source-uw2.transaction.funding.entity-groups snowflake_service_user readacl4bab029ec7e source-ue1.configuration.funding.entity-groups snowflake_service_user readacl4bab020cf4a source-uw2.issuing.account-management.company snowflake_service_user readacl4bab027b6a5 source-ue1.wex.issuing.paymentprocessing.Ledger snowflake_service_user readacl4bab0249fd9 source-ue1.issuing.account-management.company snowflake_service_user readacl4bab02c8c2c source-ue1.transaction.funding.entity-groups snowflake_service_user readacl4bab025516c source-uw2.configuration.funding.entity-groups snowflake_service_user readacl4bc7f25fe7b encompass.*.stppayment bf-PaymentManagerAPI readacl4bc7f21a0ad platform.file-gateway.source-data.* platform-file_gateway-sourcedata readwriteacl4bc7f2629ce kaas.migration.reference kaas.migration-reference readwriteacl4bc7f2469aa sample.benefits sample-benefits readwriteacl4bcc11a8c57 notification.status epec-qa readwriteacl4bcc11daba5 payments.principals epec-qa readwriteacl4bcc11c1dac notification.queue epec-qa readwriteacl4bcc9f2dda5 payments.forex epec-qa readwriteacl4bf3f5fb71e dev-mbe.enrollment.confirmation-statement dev-mbe.enrollment.confirmation-statement readwriteacl4bf3f538639 qa-mbe.enrollment.confirmation-statement qa-mbe.enrollment.confirmation-statement readwriteacl4c6ec85c498 streaming.authorization.* acs readwriteacl4c6ec820fde streaming.authorization.* fdg readacl4c7278c8540 funding.devops-cluster-test-<JIRA_TICKET_6> funding_devops_cluster_test_2023_2 readwriteacl4c7b2ec1676 notification.result.queue epec-qa readwriteacl4c7b2ed4529 notification.result.queue notification readwriteacl4c97664a94e bf-vin-vehicleinfo-json-public* bf-vin-manager-api readwriteacl4cb8725b0f8 event-hub.scheduler event-hub-scheduler writeacl4cb90e3213f <PERSON_11> readacl4cb949bbe83 payment-rails.bank-transfer.payment.sent events-filter readacl4cb94909752 payment-rails.bank-transfer.payment.booked events-filter readacl4cb9496ae44 configuration.funding.entity-groups events-filter readacl4cb9496b597 payments.forex events-filter readacl4cb9491c21f payment-rails.bank-transfer.payment.rejected events-filter readacl4cb95de8423 events-filter.topics events-filter readacl4cb99c0923b test events-filter readacl4cc5805447e dev-wex.issuing.accounts_receivable.company_unpaid_balances tag_dev_unpaid_balance_producer writeacl4cc5805af4f wex.issuing.accounts_receivable.company_unpaid_balances tag_test_unpaid_balance_producer writeacl4cc92c954c7 *loc-automation* bemod_loc readwriteacl4ce59ea744a wex.issuing.cardprocessing.card events-filter readacl4ce59e763e9 wex.issuing.cardprocessing.card.naf events-filter writeacl4ce59e6d4f6 wex.issuing.cardprocessing.card.encompass-wex events-filter writeacl4cf1296b9b8 kaas.pg.debezium* kaas.pg.debezium readwriteacl4d254b956e1 funding.canary ps-funding-canary readwriteacl4d668e7824f encompass.demo.account card-digitization-service readacl4d668ee5f9f encompass.qa.account card-digitization-service readacl4d7a5c16fda issuing.account-management.company tag_test_card_service_company_consumer readacl4d7a5c654e8 dev-issuing.account-management.company tag_dev_card_service_company_consumer readacl4d7e4d94609 com.wex.fleet.streams.naf.<JIRA_TICKET_5> bf-transys-team readwriteacl4da509162a7 transys.txn.consumer.bf.response bf-transys-team readwriteacl4da56c3451d wex.issuing.accounts_receivable.company_unpaid_balances dsc-statement-summary-consumer readacl4dd16969dfb plastic_card_order_processor.poc plastic_card_order_processor_kafka_user readwriteacl4dfb5231144 * costa adminacl4e051acc259 gfmtofe.widget-reprocessing.events gfm-to-fe-widget-consumer readwriteacl4e1bf054fd8 notification.result.queue.azure epec-qa readwriteacl4e1bf014b6f notification.status.azure epec-qa readwriteacl4e1bf040a80 notification.status.azure notification readwriteacl4e1bf005fec notification.result.queue.azure notification readwriteacl4e1bf0a394d notification.queue.azure epec-qa readwriteacl4e1bf0ce0de notification.queue.azure notification readwriteacl4e1e15cc017 platform.file-gateway.settle-file-clearings finrec_bank_reconciliation_2022 readacl4e20831f8d8 dev-processing.be.communication event-hub-scheduler writeacl4e20834fff6 processing.be.communication event-hub-scheduler writeacl4e42629f5f6 apigee-service apigee-service readacl4e432e55e06 wex.issuing.cardprocessing.card.naf event-filter writeacl4e432e3162d wex.issuing.cardprocessing.card.encompass-wex event-filter writeacl4e432e71d12 wex.issuing.cardprocessing.card event-filter readacl4e638c21f0c apigee-service event-hub-scheduler writeacl4e6cefd506f wex.issuing.accounts_receivable.company_unpaid_balances funding_fund_disbursement_2022 readacl4e743da80fb streaming.authorization.authorization_log.dlq fdg readwriteacl4e7b8dcfa01 wex.issuing.cardprocessing.card.naf nam_mc_card_consumer readacl4e7b8d8eea6 wex.issuing.cardprocessing.card.encompass-wex betelgeuseCardOrders readacl4e8d0afbd7b dev-wex.issuing.accounts_receivable.company_statement_generated tag_dev_company_statement_producer writeacl4e97ead5a99 wex.issuing.cardprocessing.card tag_test_card_service_producer writeacl4e97ea4afc0 dev-wex.issuing.cardprocessing.card tag_dev_card_service_producer writeacl4e98db1413e dev-wex.issuing.accounts_receivable.statement_cycle_complete tag_dev_statement_cycle_producer writeacl4e98dbeb1bd wex.issuing.accounts_receivable.statement_cycle_complete tag_test_statement_cycle_producer writeacl4e996fe2382 wex.issuing.accounts_receivable.company_statement_generated tag_test_company_statement_producer <PERSON_10> dit-otr.contracts otr-moneycode-service readacl4e9d47fcadd dit-otr.contracts otr-contract-service writeacl4eb21ccdf22 kaas.test.temporary <PERSON_9>-reference readwriteacl4eb39a0a012 platform.file-gateway.message-listener.* platform-file_gateway-messagelistener readwriteacl4eb39a21857 platform.file-gateway.message-listener.* platform-file_gateway-messagelistener readacl4eb7c7e08b5 identity_verification_service.verification.status-qa csi-steam readwriteacl4eb7c7dfed6 identity_verification_service.verification.status-int csi-steam readwriteacl4ebe3ccf16d kaas.* kaas.pg.debezium readwriteacl4ebef24042f bp.qa.businesses bp-qa-businesses readwriteacl4ed65c540bb prototype.funding.canary ps-funding-canary-prototype readwriteacl4edc2ec42f9 wex.issuing.accounts_receivable.company_statement_generated dsc-statement-summary-consumer readacl4edc2eb0015 wex.issuing.accounts_receivable.statement_cycle_complete dsc-statement-summary-consumer readacl4ee0b511691 dit_otr_mcode* otr_mcode_event_publisher_service <PERSON_8>.* kaas-reference readwriteacl4eea8aa86da source-ue1.treasury.bank-transactions analytics readacl4eea8ab5f06 source-uw2.treasury.bank-transactions analytics readacl4eea8a634cb treasury.bank-transactions analytics readacl4eea8aa9309 treasury.bank-transactions snowflake_service_user readacl4eea8aad449 source-ue1.treasury.bank-transactions snowflake_service_user readacl4eea8a101bc source-uw2.treasury.bank-transactions snowflake_service_user readacl4eeac4d9278 partner-otr.contracts otr-moneycode-service readacl4eeac4a82c7 sit-otr.contracts otr-contract-service writeacl4eeac43bce0 sit-otr.contracts otr-moneycode-service readacl4eeac489ae5 partner-otr.contracts <PERSON_7>-contract-service writeacl4f07dfed794 bf-vin-mesh-json-public* bf-vin-manager-api readwriteacl4f13663cfcd platform.file-gateway.ptp-file-importer.* platform-file_gateway-ptpfileimporter readwriteacl4f17e1fd096 dit_otr_backoff.loyalty.* otr_backoff_loyalty_event_publisher_service <PERSON_6> dit_otr_backoff.report.* otr_backoff_report_event_publisher_service readwriteacl4f17e1cc219 dit_otr_backoff.token.* otr_backoff_token_event_publisher_service readwriteacl4f17e16f228 dit_otr_backoff.fuelcode.* otr_backoff_fuelcode_event_publisher_service readwriteacl4f3b9a4959e wex.issuing.cardprocessing.card.encompass-wex plastic_card_order_processor_card_topic_consumer readwriteacl4f4ff1f651d <PERSON_5>-to-fe-widget-consumer readwriteacl4f614deb59d *encompass.?*.account encompass writeacl4fa699d259b funding.disbursements funding_deposit_processing_2022 readacl4faa589f074 dit_otr_mcode.* otr_mc_snowflake_aiven_user readacl4fc70da3f0d dit_otr_backoff.* otr_10_4_snowflake_aiven_user readacl4fcddfc3cf6 source-*.dit_otr_mcode* otr_mcode_event_publisher_service readacl4fdce29df49 scheme-management-sa-parser.dlq scheme_management_mcsa_parser_2022 readwriteacl4ff2ee9473d kaas.onboarding kaas-onboarding-user readwriteacl50744e773ab owi.sync.status.* owi-migration-app-user-dev readwriteacl50744e504a9 *owi.sync.status owi-migration-app-user-dev readacl50744ee8b01 *owi.sync.status owi-migration-app-user-test readacl50744efed43 owi.sync.status.* owi-migration-app-user-test readwriteacl5075e8df537 platform.file-gateway.ptp-file-importer.* platform-file_gateway-kafkaconnector readwriteacl5076c76e863 *.initial-data-feed mbe.enrollment.initial-data-feed readwrite
 
 
 api kafka connectors list
 
 
-    api kafka connectors list 2996837response========value----------------------------splunk_logspg-debezium-ev-entity-eventsapi kafka connectors list 2648386response========value--------------------------------------------------data-team-snowflake-connector-otr-moneycode-uw2-DRpg-debezium-source-pgditfuelcode-uw2pg-debezium-source-pgditloyalty-uw2pg-debezium-source-pgditmcode-uw2splunk_loggingdata-team-snowflake-connector-treasury-DRpg-debezium-source-pgditreport-uw2data-team-snowflake-connector-otr-10-4-uw2-DRpg-debezium-source-pgdittoken-uw2
+    api kafka connectors list 2996837response========value----------------------------splunk_logspg-debezium-ev-entity-eventsapi kafka connectors list 2648386response========value--------------------------------------------------data-team-snowflake-connector-otr-moneycode-uw2-DRpg-debezium-source-pgditfuelcode-uw2pg-debezium-source-pgditloyalty-uw2pg-debezium-source-pgditmcode-uw2splunk_loggingdata-team-snowflake-connector-treasury-DRpg-debezium-source-pgditreport-uw2data-team-snowflake-connector-<JIRA_TICKET_4>-4-uw2-DRpg-debezium-source-pgdittoken-uw2
 
 
 api kafka connectors show
 
 
-    api kafka connectors show 2996837 pg-debezium-ev-entity-eventsresponse========key value---------------------------------------------------------- <URL>ass <URL>nnector.postgresql.PostgresConnectorconfig.database.dbname <URL>name <URL>ssword *REDACTED*config.database.port <URL> fabric_ev_<URL>er evdev_kafka_<URL> evdev_kafka_entity_<URL>st fabric_ev_dev.entity_<URL>efix <URL>ansforms <URL>placement <URL>yload <URL>ment aggregatetype:header:<URL>ansforms.outbox.type <URL>nverter <URL>hemas.enable falsetype sourcename pg-debezium-ev-entity-eventstasks=====connector task---------------------------- ------pg-debezium-ev-entity-events 0 --- api kafka connectors show 2648386 pg-debezium-source-pgditmcode-uw2 response========key value----------------------------------------------------------- <URL>ass <URL>nnector.postgresql.PostgresConnectorconfig.database.dbname <URL>name <URL>ssword *REDACTED*config.database.port 5432config.database.sslmode <URL>er otr_mcode_event_publisher_<URL>ssword otr_mcode_event_publisher_service_dev_<URL>ername otr_mcode_event_publisher_<URL>nverter <URL>urce USER_<URL> *REDACTED*<URL>gistry.url <URL>:<URL> pub_<URL>gion <URL> pgditmcode_<URL>st mcode_<URL>code, mcode_<URL>code_fee, mcode_<URL>code_use_prompt, mcode_<URL>code_prompt, mcode_owner.databasechangelog, mcode_owner.databasechangeloglock, mcode_<URL>code_batch_delivery_data, mcode_<URL>code_audit, mcode_<URL>code_audit_prompt, mcode_<URL>code_use, mcode_<URL>code_auto_batch, mcode_<URL>code_batch, mcode_<URL>code_template, mcode_<URL>code_system_void, mcode_<URL>code_use_<URL>x <URL>lete <URL>efix dit_otr_<URL>nverter <URL>urce USER_<URL> *REDACTED*<URL>gistry.url <URL>:13443type sourcename pg-debezium-source-pgditmcode-uw2tasks=====connector task--------------------------------- ------pg-debezium-source-pgditmcode-uw2 0
+    api kafka connectors show 2996837 pg-debezium-ev-entity-eventsresponse========key value---------------------------------------------------------- --------------------------------------------------------------------config.connector.class io.debezium.connector.postgresql.PostgresConnectorconfig.database.dbname psqlfabricevdevconfig.database.hostname ev-dev-psql-cluster.cluster-c9rero1htynf.us-<JIRA_TICKET_2>.rds.amazonaws.comconfig.database.password *REDACTED*config.database.port 5432config.database.server.name fabric_ev_devconfig.database.user evdev_kafka_connectconfig.name pg-debezium-ev-entity-eventsconfig.plugin.name pgoutputconfig.slot.name evdev_kafka_entity_eventsconfig.table.include.list fabric_ev_dev.entity_eventconfig.topic.prefix ev.dev.entity-eventsconfig.transforms outboxconfig.transforms.outbox.route.topic.replacement ev.dev.entity-eventsconfig.transforms.outbox.table.expand.json.payload trueconfig.transforms.outbox.table.fields.additional.placement aggregatetype:header:schemaIdconfig.transforms.outbox.type io.debezium.transforms.outbox.EventRouterconfig.value.converter org.apache.kafka.connect.json.JsonConverterconfig.value.converter.schemas.enable falsetype sourcename pg-debezium-ev-entity-eventstasks=====connector task---------------------------- ------pg-debezium-ev-entity-events 0 --- api kafka connectors show 2648386 pg-debezium-source-pgditmcode-uw2 response========key value----------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------config.connector.class io.debezium.connector.postgresql.PostgresConnectorconfig.database.dbname pgditmcodeconfig.database.hostname 10.94.107.58config.database.password *REDACTED*config.database.port 5432config.database.sslmode requireconfig.database.user otr_mcode_event_publisher_serviceconfig.kafka.password otr_mcode_event_publisher_service_dev_uw2config.kafka.<USERNAME_1>_mcode_event_publisher_serviceconfig.key.converter io.confluent.connect.avro.AvroConverterconfig.key.converter.basic.auth.credentials.source USER_INFOconfig.key.converter.schema.registry.basic.auth.user.info *REDACTED*<URL_6>gistry.url <URL_4>:13443config.name pg-debezium-source-pgditmcode-uw2config.plugin.name pgoutputconfig.publication.name pub_pgditmcodeconfig.region us-<JIRA_TICKET_2>config.slot.name pgditmcode_slotconfig.table.include.list mcode_owner.moneycode, mcode_owner.moneycode_fee, mcode_owner.moneycode_use_prompt, mcode_owner.moneycode_prompt, mcode_owner.databasechangelog, mcode_owner.databasechangeloglock, mcode_owner.moneycode_batch_delivery_data, mcode_owner.moneycode_audit, mcode_owner.moneycode_audit_prompt, mcode_owner.moneycode_use, mcode_owner.moneycode_auto_batch, mcode_owner.moneycode_batch, mcode_owner.moneycode_template, mcode_owner.moneycode_system_void, mcode_owner.moneycode_use_voidconfig.tasks.max 1config.tombstones.on.delete trueconfig.topic.prefix dit_otr_mcodeconfig.value.converter io.confluent.connect.avro.AvroConverterconfig.value.converter.basic.auth.credentials.source USER_INFOconfig.value.converter.schema.registry.basic.auth.user.info *REDACTED*<URL_5>gistry.url <URL_4>:13443type sourcename pg-debezium-source-pgditmcode-uw2tasks=====connector task--------------------------------- ------pg-debezium-source-pgditmcode-uw2 0
 
 
 Note: looks like one of the connector configs if missing sslmode = require however I don't think that's the issue here... maybe
@@ -374,55 +374,55 @@ Note: looks like one of the connector configs if missing sslmode = require howev
 
 * * *
 
-    Not working KC service id: 2996837 connector: null, user: ev-dev-entity-events-producer, connected kafka service 299680997f5b96e-8c36-4639-bfb7-dad1388d2738 kafka_connect wex-shared-aws-dev-kafka-euc1 (2996809) wex-shared-aws-dev-kafka-connect-euc1-0 (2996837) true truea17992a2-d127-4f43-9cde-cae5a9c52533 kafka_logs wex-shared-aws-dev-kafka-connect-euc1-0 (2996837) wex-shared-aws-dev-kafka-euc1 (2996809) true true------------Working KC service id: 2648386 connector: pg-debezium-source-pgditmcode-uw2, user: otr_mcode_event_publisher_service, connected kafka service 924602c5d91fdd-9617-4400-95f2-49bfdb590a52 kafka_connect wex-kafka-dev-pci-uw2 (924602) wex-aws-pci-dev-us-west-2-kafka-connect-0 (2648386) true truef736a334-82f2-4284-927f-1ae6cb9cb884 kafka_logs wex-aws-pci-dev-us-west-2-kafka-connect-0 (2648386) wex-kafka-dev-pci-uw2 (924602)
+    Not working KC service id: 2996837 connector: null, user: <USERNAME_0>, connected kafka service 299680997f5b96e-8c36-4639-bfb7-dad1388d2738 kafka_connect wex-shared-aws-dev-kafka-euc1 <SERVICE_NUMBER_2> wex-shared-aws-dev-kafka-connect-euc1-0 <SERVICE_NUMBER_3> true truea17992a2-d127-4f43-9cde-cae5a9c52533 kafka_logs wex-shared-aws-dev-kafka-connect-euc1-0 <SERVICE_NUMBER_3> wex-shared-aws-dev-kafka-euc1 <SERVICE_NUMBER_2> true true------------Working KC service id: 2648386 connector: pg-debezium-source-pgditmcode-uw2, user: otr_mcode_event_publisher_service, connected kafka service 924602c5d91<JIRA_TICKET_3>-4400-95f2-49bfdb590a52 kafka_connect wex-kafka-dev-pci-uw2 <SERVICE_NUMBER_0> wex-aws-pci-dev-us-<JIRA_TICKET_2>-kafka-<JIRA_TICKET_1> <SERVICE_NUMBER_1> true truef736a334-82f2-4284-927f-1ae6cb9cb884 kafka_logs wex-aws-pci-dev-us-<JIRA_TICKET_2>-kafka-<JIRA_TICKET_1> <SERVICE_NUMBER_1> wex-kafka-dev-pci-uw2 <SERVICE_NUMBER_0>
 
 
 ==================================================
 Comment ID: 31658784405649
 Timestamp: 2025-01-10 09:15:15 UTC
-Author: <PERSON> (Aiven Internal)
+Author: <PERSON_1> (Aiven Internal)
 Type: PRIVATE
 Content:
 The error is from the call to `parsed = urlparse(value + "/config")`
-<URL>
+<URL_3>
 Maybe this is the reason why the Config ACL is required.
 
 
 ==================================================
 Comment ID: 31660023936529
 Timestamp: 2025-01-10 09:47:52 UTC
-Author: <PERSON> (Aiven Internal)
+Author: <PERSON_1> (Aiven Internal)
 Type: PRIVATE
 Content:
-I asked in #ask-kafka-ecosystem: <URL>
+I asked in #ask-kafka-ecosystem: <URL_2>
 
 
 ==================================================
 Comment ID: 31670300113425
 Timestamp: 2025-01-10 13:59:02 UTC
-Author: <PERSON> (Aiven Internal)
+Author: <PERSON_1> (Aiven Internal)
 Type: PRIVATE
 Content:
 **#se_to_se_handover**
 
 **Summary:**
-The customer is attempting to create a new PG Debezium source connector in KC 2996837. While using the Avro Converter for Value, they encountered the following error on the console: `There was an error in the configuration. <URL>gistry.url: Connection failed with HTTP status code 403 on console.`. <PERSON> reproduced this error in the dev-sandbox and suggested a workaround: setting the service user's ACL resource to `Config:`. However, the customer has pointed out that another KC `2648386` without such ACL works without issues.
+The customer is attempting to create a new PG Debezium source connector in KC 2996837. While using the Avro Converter for Value, they encountered the following error on the console: `There was an error in the configuration. <URL_1>gistry.url: Connection failed with HTTP status code 403 on console.`. <PERSON_0> reproduced this error in the dev-sandbox and suggested a workaround: setting the service user's ACL resource to `Config:`. However, the customer has pointed out that another KC `2648386` without such ACL works without issues.
 
 Service details:
 
 - KC not working: 2996837 / wex-shared-aws-dev-kafka-connect-euc1-0
 - Connector: n/a, as the issue is found during setup phase
 - Integrated Kafka: 2996809 / wex-shared-aws-dev-kafka-euc1
-- Service user: ev-dev-entity-events-producer
+- Service user: <USERNAME_0>
 
 
-- KC working: 2648386 / wex-aws-pci-dev-us-west-2-kafka-connect-0
+- KC working: 2648386 / wex-aws-pci-dev-us-<JIRA_TICKET_2>-kafka-<JIRA_TICKET_1>
 - Connector: pg-debezium-source-pgditmcode-uw2
 - Integrated Kafka: 924602 / wex-kafka-dev-pci-uw2
 - Service user: otr_mcode_event_publisher_service
 
 It looks like `Config:` worked because there is an validation call to `parsed = urlparse(value + "/config")` (code), but I couldn't find out why the other KC worked, as the ACL looks exactly the same in both services: `avn-prod kafka schema-registry-acls <Service> --json | jq '.[] | select(.username == "<Service user>")'`
-I asked in #ask-kafka-ecosystem: <URL>
+I asked in #ask-kafka-ecosystem: <URL_2>
 
 **Next Steps:**
 Please investigate further and monitor the investigation thread.
@@ -431,24 +431,24 @@ Please investigate further and monitor the investigation thread.
 ==================================================
 Comment ID: 31970253343633
 Timestamp: 2025-01-21 07:46:03 UTC
-Author: <PERSON> (Support Engineer)
+Author: <PERSON_1> (Support Engineer)
 Type: PUBLIC
 Content:
 Hi Edward,
 
-The issue has been escalated to our <PERSON> team for investigation. However, it is currently in their backlog and awaiting prioritization.
+The issue has been escalated to our <PERSON_4> team for investigation. However, it is currently in their backlog and awaiting prioritization.
 
 Could you kindly confirm if the current severity level of 'Low' still reflects the business impact of this issue, or if an adjustment is necessary?
 
 Regards
 Alma
-<PERSON>
+<PERSON_3>
 
 
 ==================================================
 Comment ID: 32021476724753
 Timestamp: 2025-01-22 14:25:26 UTC
-Author: <PERSON> (Customer)
+Author: <PERSON_2> (Customer)
 Type: PUBLIC
 Content:
 Hello! Thank you very much for the update!
@@ -461,13 +461,13 @@ Thanks so much!
 ==================================================
 Comment ID: 32088200672913
 Timestamp: 2025-01-24 13:49:24 UTC
-Author: <PERSON> (Aiven Internal)
+Author: <PERSON_1> (Aiven Internal)
 Type: PRIVATE
 Content:
 Long running case update:
 
 - Summary: please find in the above handover
-- Status: escalated to L4 via PM-4707, waiting to be assigned
+- Status: escalated to L4 via <JIRA_TICKET_0>, waiting to be assigned
 - Business impact:
 
 > The severity is still currently low, but the impact is that we have a team that would like to try AVRO using kafka connect in emea dev.
@@ -476,13 +476,13 @@ Long running case update:
 ==================================================
 Comment ID: 32678660879633
 Timestamp: 2025-02-14 14:03:03 UTC
-Author: <PERSON> (Aiven Internal)
+Author: <PERSON_1> (Aiven Internal)
 Type: PRIVATE
 Content:
 **#se_to_se_handover**
 
 **Summary:**
-The customer is attempting to create a new PG Debezium source connector in KC 2996837. While using the Avro Converter for Value, they encountered the following error on the console: `There was an error in the configuration. <URL>gistry.url: Connection failed with HTTP status code 403 on console.` <PERSON> reproduced this error in the dev-sandbox and suggested a workaround: setting the service user's ACL resource to `Config:`. However, the customer has pointed out that another KC `2648386` without such ACL works without issues. We created <URL> to investigate.
+The customer is attempting to create a new PG Debezium source connector in KC 2996837. While using the Avro Converter for Value, they encountered the following error on the console: `There was an error in the configuration. <URL_1>gistry.url: Connection failed with HTTP status code 403 on console.` <PERSON_0> reproduced this error in the dev-sandbox and suggested a workaround: setting the service user's ACL resource to `Config:`. However, the customer has pointed out that another KC `2648386` without such ACL works without issues. We created <URL_0> to investigate.
 
 **Next Steps:**
 The severity is still currently low for the customer, however, if it changes, please reach out to engineering for an update. As I will be out, I am unassigning this ticket back to the queue.

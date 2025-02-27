@@ -255,7 +255,7 @@ Hey Gordon!
 
 An example is the following in **wex-eventing-dev -**
 
-In the service **wex-aws-pci-dev-us-west-2-kafka-connect-0** there is a connector named **pg-debezium-source-pgditmcode-uw2** which is using the service user **otr_mcode_event_publisher_service** for the schema registry from the corresponding kafka service **wex-kafka-dev-pci-uw2**
+In the service **wex-aws-pci-dev-us-west-2-kafka-connect-0** there is a connector named **pg-debezium-source-pgditmcode-uw2** which is using the service user **otr_mcode_event_publisher_service** for the schema registry from the corresponding kafka service **wex-kafka-dev-pci-uw2** cyber.surya@gmail.com
 
 Thanks!
 

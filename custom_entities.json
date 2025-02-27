@@ -1,0 +1,57 @@
+[
+  {
+    "entity_name": "VPC_ID",
+    "patterns": [
+      "vpc `[a-f0-9-]+`",
+      "vpc [a-f0-9-]+"
+    ],
+    "context": [
+      "vpc",
+      "pcidss",
+      "same vpc",
+      "network"
+    ],
+    "score": 0.9
+  },
+  {
+    "entity_name": "SERVICE_NUMBER",
+    "patterns": [
+      "\\(\\d{6,7}\\)"
+    ],
+    "context": [
+      "service",
+      "id",
+      "number",
+      "identifier"
+    ],
+    "score": 0.8
+  },
+  {
+    "entity_name": "USERNAME",
+    "patterns": [
+      "[a-zA-Z0-9-]+-[a-zA-Z0-9-]+-[a-zA-Z0-9-]+-producer",
+      "avnadmin",
+      "USERNAME [A-Za-z0-9-]+"
+    ],
+    "context": [
+      "username",
+      "user",
+      "password",
+      "credentials"
+    ],
+    "score": 0.9
+  },
+  {
+    "entity_name": "JIRA_TICKET",
+    "patterns": [
+      "[A-Z]{2,}-\\d+"
+    ],
+    "context": [
+      "https://aiven.atlassian.net/browse/",
+      "via",
+      "EC-",
+      "PM-"
+    ],
+    "score": 0.9
+  }
+]

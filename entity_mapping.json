@@ -1,0 +1,979 @@
+{
+  "mappings": {
+    "URL": {
+      "https://aiven.atlassian.net/browse/EC-718": "<URL_0>",
+      "value.converter.schema.re": "<URL_1>",
+      "https://aiven-io.slack.com/archives/C071699P2R2/p1736502421078179": "<URL_2>",
+      "https://github.com/aiven/aiven-core/blob/1979215a9b4441d8694af2c02729626440125b5f/aiven/acorn/configcheck.py#L174": "<URL_3>",
+      "https://wex-kafka-dev-pci-uw2-wex-eventing-dev.aivencloud.com": "<URL_4>",
+      "config.value.converter.schema.re": "<URL_5>",
+      "config.key.converter.schema.re": "<URL_6>",
+      "https://wex-shared-aws-dev-kafka-euc1-wex-eventing-aws-emea-dev.f.aivencloud.com": "<URL_7>",
+      "https://aivenhelp.zendesk.com/attachments/token/61gBynZ61ubnHZnpKNUQGnlfK/?name=image.png": "<URL_8>",
+      "https://support-console-poc.ew.r.appspot.com/service/.wex-shared-aws-dev-kafka-connect-euc1-0": "<URL_9>"
+    },
+    "PERSON": {
+      "Gordon": "<PERSON_0>",
+      "Alma Meng": "<PERSON_1>",
+      "Edward O'Connor": "<PERSON_2>",
+      "Team Aiven": "<PERSON_3>",
+      "Kafka": "<PERSON_4>",
+      "gfmtofe.creditsync-reprocessing.events gfm": "<PERSON_5>",
+      "readwriteacl4f17e1c5f93": "<PERSON_6>",
+      "otr": "<PERSON_7>",
+      "readacl4ee5502c661 kaas": "<PERSON_8>",
+      "kaas": "<PERSON_9>",
+      "writeacl4e9d472fb02": "<PERSON_10>",
+      "notification.queue kafka_metadata_api": "<PERSON_11>",
+      "Ledger ps-finrec-settlementreconciliation-2023": "<PERSON_12>",
+      "ps-finrec-settlementreconciliation-2023": "<PERSON_13>",
+      "funding_fund_position_2022": "<PERSON_14>",
+      "Ledger finrec_client_balance_2022": "<PERSON_15>",
+      "kafka acls": "<PERSON_16>",
+      "Pascoe": "<PERSON_17>",
+      "I\u2019m ooo": "<PERSON_18>",
+      "Gordon Chen": "<PERSON_19>"
+    },
+    "JIRA_TICKET": {
+      "PM-4707": "<JIRA_TICKET_0>",
+      "connect-0": "<JIRA_TICKET_1>",
+      "west-2": "<JIRA_TICKET_2>",
+      "fdd-9617": "<JIRA_TICKET_3>",
+      "otr-10": "<JIRA_TICKET_4>",
+      "NafTransaction-1": "<JIRA_TICKET_5>",
+      "app-2": "<JIRA_TICKET_6>",
+      "settlementreconciliation-2023": "<JIRA_TICKET_7>",
+      "test-2023": "<JIRA_TICKET_8>",
+      "poc-2023": "<JIRA_TICKET_9>",
+      "dotnet-2023": "<JIRA_TICKET_10>",
+      "forecasting-2023": "<JIRA_TICKET_11>",
+      "safeguarding-2023": "<JIRA_TICKET_12>",
+      "af-9844": "<JIRA_TICKET_13>"
+    },
+    "USERNAME": {
+      "ev-dev-entity-events-producer": "<USERNAME_0>",
+      "username otr": "<USERNAME_1>",
+      "username permission--------------": "<USERNAME_2>",
+      "ev-ifcs-dev-entity-events-producer": "<USERNAME_3>",
+      "ev-ifcs-qa-entity-events-producer": "<USERNAME_4>",
+      "ev-qa-entity-events-producer": "<USERNAME_5>",
+      "avnadmin": "<USERNAME_6>",
+      "username and": "<USERNAME_7>",
+      "00ev-dev-entity-events-producer": "<USERNAME_8>",
+      "USERNAME ENCRYPTED": "<USERNAME_9>"
+    },
+    "SERVICE_NUMBER": {
+      "(924602)": "<SERVICE_NUMBER_0>",
+      "(2648386)": "<SERVICE_NUMBER_1>",
+      "(2996809)": "<SERVICE_NUMBER_2>",
+      "(2996837)": "<SERVICE_NUMBER_3>"
+    },
+    "IP_ADDRESS": {
+      "0.0.0.0": "<IP_ADDRESS_0>",
+      "10.0.0.0": "<IP_ADDRESS_1>"
+    },
+    "EMAIL_ADDRESS": {
+      "cyber.surya@gmail.com": "<EMAIL_ADDRESS_0>"
+    },
+    "VPC_ID": {
+      "vpc `dac4a65f-195f-6f70-eb5a-81ec482174d5`": "<VPC_ID_0>"
+    }
+  },
+  "analyzed_entities": [
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "ev-dev-entity-events-producer",
+      "score": 1.0
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "ev-dev-entity-events-producer",
+      "score": 1.0
+    },
+    {
+      "entity_type": "VPC_ID",
+      "entity_text": "vpc `dac4a65f-195f-6f70-eb5a-81ec482174d5`",
+      "score": 1.0
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "USERNAME ENCRYPTED",
+      "score": 1.0
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "username and",
+      "score": 1.0
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "ev-dev-entity-events-producer",
+      "score": 1.0
+    },
+    {
+      "entity_type": "EMAIL_ADDRESS",
+      "entity_text": "cyber.surya@gmail.com",
+      "score": 1.0
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "ev-dev-entity-events-producer",
+      "score": 1.0
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "ev-dev-entity-events-producer",
+      "score": 1.0
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "avnadmin",
+      "score": 1.0
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "avnadmin",
+      "score": 1.0
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "username permission--------------",
+      "score": 1.0
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "username permission--------------",
+      "score": 1.0
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "username otr",
+      "score": 1.0
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "ev-dev-entity-events-producer",
+      "score": 1.0
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "ev-dev-entity-events-producer",
+      "score": 1.0
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "https://wex-shared-aws-dev-kafka-euc1-wex-eventing-aws-emea-dev.f.aivencloud.com",
+      "score": 0.95
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "https://wex-shared-aws-dev-kafka-euc1-wex-eventing-aws-emea-dev.f.aivencloud.com",
+      "score": 0.95
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "https://wex-shared-aws-dev-kafka-euc1-wex-eventing-aws-emea-dev.f.aivencloud.com",
+      "score": 0.95
+    },
+    {
+      "entity_type": "IP_ADDRESS",
+      "entity_text": "10.0.0.0",
+      "score": 0.95
+    },
+    {
+      "entity_type": "IP_ADDRESS",
+      "entity_text": "0.0.0.0",
+      "score": 0.95
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "https://wex-kafka-dev-pci-uw2-wex-eventing-dev.aivencloud.com",
+      "score": 0.95
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "https://wex-kafka-dev-pci-uw2-wex-eventing-dev.aivencloud.com",
+      "score": 0.95
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "https://github.com/aiven/aiven-core/blob/1979215a9b4441d8694af2c02729626440125b5f/aiven/acorn/configcheck.py#L174",
+      "score": 0.95
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "avnadmin",
+      "score": 0.9
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "00ev-dev-entity-events-producer",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "west-2",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "connect-0",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "west-2",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "connect-0",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "af-9844",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "fdd-9617",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "west-2",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "connect-0",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "west-2",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "connect-0",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "west-2",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "connect-0",
+      "score": 0.9
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "ev-qa-entity-events-producer",
+      "score": 0.9
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "ev-ifcs-qa-entity-events-producer",
+      "score": 0.9
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "ev-dev-entity-events-producer",
+      "score": 0.9
+    },
+    {
+      "entity_type": "USERNAME",
+      "entity_text": "ev-ifcs-dev-entity-events-producer",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "safeguarding-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "safeguarding-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "safeguarding-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "safeguarding-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "safeguarding-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "forecasting-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "forecasting-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "forecasting-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "dotnet-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "poc-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "NafTransaction-1",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "settlementreconciliation-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "test-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "test-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "settlementreconciliation-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "settlementreconciliation-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "settlementreconciliation-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "settlementreconciliation-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "settlementreconciliation-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "settlementreconciliation-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "settlementreconciliation-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "test-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "test-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "settlementreconciliation-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "settlementreconciliation-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "settlementreconciliation-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "settlementreconciliation-2023",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "app-2",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "NafTransaction-1",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "otr-10",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "west-2",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "west-2",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "fdd-9617",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "west-2",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "connect-0",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "west-2",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "connect-0",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "west-2",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "connect-0",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "PM-4707",
+      "score": 0.9
+    },
+    {
+      "entity_type": "JIRA_TICKET",
+      "entity_text": "EC-718",
+      "score": 0.9
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon Chen",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Alma Meng",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Alma Meng",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Edward O'Connor",
+      "score": 0.85
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "value.converter.schema.re",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Edward O'Connor",
+      "score": 0.85
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "value.converter.schema.re",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon Chen",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Kafka",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon Chen",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Kafka",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon Chen",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon Chen",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Kafka",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Team Aiven",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Edward O'Connor",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon Chen",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Team Aiven",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Edward O'Connor",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon Chen",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Kafka",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Team Aiven",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Edward O'Connor",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon Chen",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Kafka",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Team Aiven",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Edward O'Connor",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon Chen",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Kafka",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon Chen",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "I\u2019m ooo",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Pascoe",
+      "score": 0.85
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "value.converter.schema.re",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "kafka acls",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Ledger finrec_client_balance_2022",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "funding_fund_position_2022",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "ps-finrec-settlementreconciliation-2023",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Ledger ps-finrec-settlementreconciliation-2023",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "notification.queue kafka_metadata_api",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "writeacl4e9d472fb02",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "kaas",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "readacl4ee5502c661 kaas",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "otr",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "readwriteacl4f17e1c5f93",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "gfmtofe.creditsync-reprocessing.events gfm",
+      "score": 0.85
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "config.key.converter.schema.re",
+      "score": 0.85
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "config.value.converter.schema.re",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Alma Meng",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Alma Meng",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Alma Meng",
+      "score": 0.85
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "value.converter.schema.re",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Alma Meng",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Kafka",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Team Aiven",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Edward O'Connor",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Alma Meng",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Alma Meng",
+      "score": 0.85
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "value.converter.schema.re",
+      "score": 0.85
+    },
+    {
+      "entity_type": "PERSON",
+      "entity_text": "Gordon",
+      "score": 0.85
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(2996837)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(2996809)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(2996809)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(2996837)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(2996837)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(2996809)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(2648386)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(924602)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(2648386)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(2648386)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(924602)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(2996809)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(2996837)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(2996837)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(2996809)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(924602)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(2648386)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(2648386)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "SERVICE_NUMBER",
+      "entity_text": "(924602)",
+      "score": 0.8
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "https://support-console-poc.ew.r.appspot.com/service/.wex-shared-aws-dev-kafka-connect-euc1-0",
+      "score": 0.6
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "https://aivenhelp.zendesk.com/attachments/token/61gBynZ61ubnHZnpKNUQGnlfK/?name=image.png",
+      "score": 0.6
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "https://aivenhelp.zendesk.com/attachments/token/61gBynZ61ubnHZnpKNUQGnlfK/?name=image.png",
+      "score": 0.6
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "https://aiven-io.slack.com/archives/C071699P2R2/p1736502421078179",
+      "score": 0.6
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "https://aiven-io.slack.com/archives/C071699P2R2/p1736502421078179",
+      "score": 0.6
+    },
+    {
+      "entity_type": "URL",
+      "entity_text": "https://aiven.atlassian.net/browse/EC-718",
+      "score": 0.6
+    }
+  ],
+  "metadata": {
+    "min_score_threshold": 0.6,
+    "total_entities_detected": 500,
+    "entities_above_threshold": 178
+  }
+}
